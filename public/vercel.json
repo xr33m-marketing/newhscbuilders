@@ -14,6 +14,26 @@
       "source": "https://www.hscbuilders.co.uk/:path*",
       "destination": "https://hscbuilders.co.uk/:path*",
       "permanent": true
+    },
+    {
+      "source": "/extensions",
+      "destination": "/services/hardscaping",
+      "permanent": true
+    },
+    {
+      "source": "/new-builds",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/renovations",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/contact",
+      "permanent": true
     }
   ],
   "rewrites": [

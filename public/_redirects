@@ -5,5 +5,11 @@ http://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
 # Redirect www to non-www
 https://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
 
+# Redirect old pages from previous site version to relevant current pages
+/extensions /services/hardscaping 301
+/new-builds /services 301
+/renovations /services 301
+/terms /contact 301
+
 # SPA fallback - serve index.html for all routes
 /*    /index.html   200
