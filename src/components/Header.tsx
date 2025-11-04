@@ -102,7 +102,7 @@ const Header: React.FC = () => {
   };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-6">
             <Link to="/" onClick={scrollToTop} className="flex items-center space-x-6">
@@ -218,8 +218,8 @@ const Header: React.FC = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-20 bg-black z-40 overflow-y-auto">
-            <div className="px-2 pt-2 pb-6 space-y-1">
+          <div className="lg:hidden border-t border-white border-opacity-20 bg-black">
+            <div className="px-2 pt-2 pb-3 space-y-1 max-h-[calc(100vh-5rem)] overflow-y-auto">
               {navigationItems.filter(item => item.name !== 'Areas').map((item) => (
               <div key={item.name}>
                 {item.hasDropdown ? (
