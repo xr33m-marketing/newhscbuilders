@@ -33,21 +33,54 @@ const Header: React.FC = () => {
         {
           name: 'Landscaping',
           href: '/services/landscaping',
+          hasSubDropdown: true,
+          subDropdownItems: [
+            { name: 'Areas', isHeader: true },
+            { name: 'Jackton', href: '/areas/jackton-landscaping' },
+            { name: 'Bothwell', href: '/areas/bothwell-landscaping' },
+            { name: 'Hamilton', href: '/areas/hamilton-landscaping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-landscaping' },
+          ]
         },
         {
           name: 'Hardscaping',
           href: '/services/hardscaping',
+          hasSubDropdown: true,
+          subDropdownItems: [
+            { name: 'Areas', isHeader: true },
+            { name: 'Jackton', href: '/areas/jackton-driveways' },
+            { name: 'Bothwell', href: '/areas/bothwell-hardscaping' },
+            { name: 'Hamilton', href: '/areas/hamilton-hardscaping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-hardscaping' },
+          ]
         },
         {
           name: 'Groundskeeping',
           href: '/services/groundskeeping',
+          hasSubDropdown: true,
+          subDropdownItems: [
+            { name: 'Areas', isHeader: true },
+            { name: 'Jackton', href: '/areas/jackton-groundskeeping' },
+            { name: 'Bothwell', href: '/areas/bothwell-groundskeeping' },
+            { name: 'Hamilton', href: '/areas/hamilton-groundskeeping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-groundskeeping' },
+          ]
         },
         {
           name: 'Masonry & Brickwork',
           href: '/services/masonry-brickwork',
+          hasSubDropdown: true,
+          subDropdownItems: [
+            { name: 'Areas', isHeader: true },
+            { name: 'Jackton', href: '/areas/jackton-masonry' },
+            { name: 'Bothwell', href: '/areas/bothwell-masonry' },
+            { name: 'Hamilton', href: '/areas/hamilton-masonry' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-masonry' },
+          ]
         },
       ]
     },
+    { name: 'Areas', href: '/areas' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Reviews', href: '/reviews' },
     { name: 'FAQ', href: '/faq' },
@@ -186,8 +219,8 @@ const Header: React.FC = () => {
 
         {isMenuOpen && (
           <div className="lg:hidden fixed inset-0 top-20 bg-black z-40 overflow-y-auto">
-            <div className="px-2 pt-2 pb-3 space-y-1 min-h-full">
-              {navigationItems.map((item) => (
+            <div className="px-2 pt-2 pb-6 space-y-1">
+              {navigationItems.filter(item => item.name !== 'Areas').map((item) => (
               <div key={item.name}>
                 {item.hasDropdown ? (
                   <div className="space-y-1">
@@ -206,29 +239,6 @@ const Header: React.FC = () => {
                         >
                           {dropdownItem.name}
                         </Link>
-                        {dropdownItem.hasSubDropdown && dropdownItem.subDropdownItems && (
-                          <div className="ml-4 mt-1 space-y-1">
-                            {dropdownItem.subDropdownItems.map((subItem) => (
-                              subItem.isHeader ? (
-                                <div key={subItem.name} className="px-3 py-1 text-primary-accent font-semibold text-xs uppercase tracking-wide">
-                                  {subItem.name}
-                                </div>
-                              ) : (
-                                <Link
-                                  key={subItem.name}
-                                  to={subItem.href}
-                                  className="block px-3 py-1 text-xs font-medium text-gray-300 hover:text-primary-accent hover:bg-white hover:bg-opacity-10 rounded transition-colors duration-200"
-                                  onClick={() => {
-                                    scrollToTop();
-                                    setIsMenuOpen(false);
-                                  }}
-                                >
-                                  {subItem.name}
-                                </Link>
-                              )
-                            ))}
-                          </div>
-                        )}
                       </div>
                     ))}
                   </div>
