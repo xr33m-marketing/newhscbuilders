@@ -144,19 +144,12 @@ const JacktonMasonry: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh] pt-16 sm:pt-8 lg:pt-0">
             {/* Left Column - Content */}
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
-              <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9)' }}>
-                Masonry in Jackton
-                <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2 text-primary-accent">
-                  Expert Craftsmanship. Modern Appeal.
-                </span>
+              <h1 className="font-body text-4xl sm:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9)' }}>
+                Masonry Experts & Bricklayers in Jackton
               </h1>
-              
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal mb-6 text-white leading-relaxed" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Professional brickwork & stonework that enhances Jackton's contemporary properties.
-              </h2>
-              
-              <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Trusted by Jackton homeowners for 17+ years with skilled craftsmanship and modern techniques.
+
+              <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed font-light" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>
+                From garden walls to stonework restoration, retaining walls to brickwork — covering Jackton & surrounding areas.
               </p>
 
               {/* Trust Indicators */}
