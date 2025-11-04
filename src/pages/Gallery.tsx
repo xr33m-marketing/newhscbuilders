@@ -253,8 +253,14 @@ const Gallery: React.FC = () => {
     {
       title: "Full Garden Transformation",
       images: [
+        "/gallery-before-transformation.webp",
+        "/hsc-before-transformation.webp",
+        "/hsc-full-before-transformation.webp",
         "/HSC-Landscaping-Full-Renovation.webp",
-        "/full-HSC-transformation-Gallery.webp"
+        "/full-HSC-transformation-Gallery.webp",
+        "/hsc-driveway-after-transformation.webp",
+        "/gallery-full-after-transformation.webp",
+        "/gallery-after-transformation.webp"
       ],
       after: "/HSC-Landscaping-Full-Renovation.webp",
       alt: "Full garden transformation by HSC Builders"
@@ -269,11 +275,21 @@ const Gallery: React.FC = () => {
       after: "/Gallery-HSC-After-Landscaping.webp",
       alt: "Complete landscape renovation project"
     },
-    { 
-      title: "Complete Transformation", 
-     before: "/full-transformation-HSC-Before.webp",
+    {
+      title: "Complete Transformation",
+      before: "/full-transformation-HSC-Before.webp",
+      images: [
+        "/full-transformation-HSC-Before.webp",
+        "/Landscaping-HSC-Full-Transformation.webp",
+        "/hsc-patio-after-transformation.webp",
+        "/hsc-driveway-full-after-transformation.webp",
+        "/hsc-landscaping-after-transformation.webp",
+        "/gallery-patio-after-transformation.webp",
+        "/gallery-driveway-after-transformation.webp",
+        "/hsc-patio-full-after-transformation.webp"
+      ],
       after: "/Landscaping-HSC-Full-Transformation.webp",
-     alt: "Complete landscape transformation project transformation"
+      alt: "Complete landscape transformation project transformation"
     },
     { 
       title: "Full Garden Transformation", 
@@ -285,11 +301,20 @@ const Gallery: React.FC = () => {
       ],
      alt: "Full garden transformation project showing dramatic before and after results"
     },
-    { 
-      title: "Complete Landscaping Project", 
+    {
+      title: "Complete Landscaping Project",
       before: "/Full-Landscaping-HSC-Gallery.webp",
       after: "/landscaping-hero-hsc.webp",
       alt: "Complete landscaping transformation with modern outdoor design"
+    },
+    {
+      title: "Professional Transformation",
+      images: [
+        "/hsc-full-after-transformation.webp",
+        "/hsc-after-transformation.webp"
+      ],
+      after: "/hsc-full-after-transformation.webp",
+      alt: "Professional garden and landscape transformation"
     }
   ];
 
