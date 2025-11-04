@@ -64,6 +64,13 @@ export const SEO: React.FC<SEOProps> = ({
     }
     canonical.setAttribute('href', fullUrl);
 
+    // Prevent duplicate content from hash-based URLs
+    if (window.location.hash.includes('#/')) {
+      updateMetaTag('robots', 'noindex, nofollow');
+    } else {
+      updateMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    }
+
     if (structuredData) {
       let script = document.querySelector('script[type="application/ld+json"]');
       if (!script) {

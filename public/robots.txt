@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow:
+Disallow: /*#
 
 # Canonical domain
 Host: https://hscbuilders.co.uk

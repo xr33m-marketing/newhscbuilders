@@ -36,6 +36,12 @@
       if (window.location.protocol === 'http:' || window.location.hostname === 'www.hscbuilders.co.uk') {
         window.location.replace('https://hscbuilders.co.uk' + window.location.pathname + window.location.search + window.location.hash);
       }
+
+      // Redirect hash-based routes to clean URLs
+      if (window.location.hash && window.location.hash.startsWith('#/')) {
+        const cleanPath = window.location.hash.substring(1);
+        window.location.replace('https://hscbuilders.co.uk' + cleanPath);
+      }
     </script>
   </head>
   <body>

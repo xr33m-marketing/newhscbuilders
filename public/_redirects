@@ -11,5 +11,16 @@ https://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
 /renovations /services 301
 /terms /contact 301
 
+# Prevent indexing of hash-based URLs by redirecting to clean URLs
+/#/about /about 301
+/#/contact /contact 301
+/#/faq /faq 301
+/#/gallery /gallery 301
+/#/reviews /reviews 301
+/#/services/groundskeeping /services/groundskeeping 301
+/#/services/hardscaping /services/hardscaping 301
+/#/services/landscaping /services/landscaping 301
+/#/services/masonry-brickwork /services/masonry-brickwork 301
+
 # SPA fallback - serve index.html for all routes
 /*    /index.html   200
