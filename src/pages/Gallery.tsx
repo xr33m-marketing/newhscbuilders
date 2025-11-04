@@ -283,7 +283,7 @@ const Gallery: React.FC = () => {
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[400px] overflow-hidden">
+      <section className="relative h-[35vh] min-h-[450px] overflow-hidden">
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
