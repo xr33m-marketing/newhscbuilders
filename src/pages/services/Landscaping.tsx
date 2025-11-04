@@ -5,6 +5,7 @@ import LogoSlider from '../../components/LogoSlider';
 import OurProcessSection from '../../components/OurProcessSection';
 import RecentProjectsSection from '../../components/RecentProjectsSection';
 import WhyChooseUsSection from '../../components/WhyChooseUsSection';
+import { SEO, getServiceSchema, getBreadcrumbSchema } from '../../components/SEO';
 
 const landscapingServices = [
   {
@@ -375,8 +376,27 @@ const Landscaping: React.FC = () => {
     "Cambuslang", "Rutherglen", "Blantyre", "Glasgow"
   ];
 
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Landscaping', url: '/services/landscaping' }
+  ];
+
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Professional Landscaping Services Hamilton & Lanarkshire"
+        description="Expert landscaping services in Hamilton, Bothwell & South Lanarkshire. Garden design, patios, driveways, artificial turf, fencing & monoblock. Free quotes & quality craftsmanship."
+        keywords="landscaping Hamilton, garden design Bothwell, patios South Lanarkshire, driveways Hamilton, artificial turf installation, fencing services, monoblock patios, garden transformation"
+        ogImage="/landscaping-hero-hsc.webp"
+        structuredData={{
+          ...getServiceSchema(
+            'Landscaping Services',
+            'Professional landscaping and garden transformation services including patios, driveways, artificial turf, fencing, and monoblock installation in Hamilton and South Lanarkshire.'
+          ),
+          ...getBreadcrumbSchema(breadcrumbs)
+        }}
+      />
       {/* Hero Section - Same layout as Home */}
       <section className="relative min-h-screen overflow-hidden">
         {/* Mobile Hero Image */}
