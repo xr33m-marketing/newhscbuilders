@@ -10,6 +10,8 @@ https://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
 /new-builds /services 301
 /renovations /services 301
 /terms /contact 301
+/contact-us /contact 301
+/about-us /about 301
 
 # Prevent indexing of hash-based URLs by redirecting to clean URLs
 /#/about /about 301
