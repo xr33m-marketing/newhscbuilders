@@ -5,94 +5,64 @@ import { Button } from '../components/MovingBorderButton';
 const Services: React.FC = () => {
   const services = [
     {
-      icon: <Scissors className="w-12 h-12 text-primary-accent" />,
-      title: "Lawn Care & Maintenance",
-      description: "Professional mowing, edging, fertilization, and seasonal cleanup to keep your lawn looking pristine year-round.",
-      features: [
-        "Weekly/bi-weekly mowing",
-        "Professional edging & trimming",
-        "Seasonal fertilization programs",
-        "Weed control & pest management",
-        "Aeration & overseeding",
-        "Leaf removal & cleanup"
-      ],
-      link: "#/services/lawn-care",
-      image: "https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
       icon: <TreePine className="w-12 h-12 text-primary-accent" />,
-      title: "Landscape Design & Installation",
-      description: "Custom landscape designs that transform your outdoor space with beautiful plants, flowers, and garden features.",
+      title: "Landscaping Services",
+      description: "Complete landscaping solutions including patios, artificial turf, driveways, fencing, and garden walls across Greater Glasgow.",
       features: [
-        "Custom landscape design",
-        "3D visualization",
-        "Plant selection for Scottish climate",
-        "Garden bed preparation",
-        "Tree & shrub planting",
-        "Seasonal color planning"
+        "Patio installation & design",
+        "Artificial turf installation",
+        "Driveway construction",
+        "Fencing & garden walls",
+        "Monoblock installation",
+        "Complete garden transformations"
       ],
-      link: "#/services/landscape-design",
-      image: "https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=800"
+      link: "#/services/landscaping",
+      image: "/landscaping-hero-hsc.webp"
     },
     {
       icon: <Hammer className="w-12 h-12 text-primary-accent" />,
-      title: "Hardscaping & Patios",
-      description: "Stone patios, walkways, retaining walls, and outdoor living spaces that add value and beauty to your property.",
+      title: "Hardscaping Services",
+      description: "Expert hardscaping for driveways, patios, pathways, retaining walls, and outdoor structures throughout South Lanarkshire.",
       features: [
-        "Natural stone & concrete patios",
-        "Walkways & garden paths",
+        "Block paving driveways",
+        "Natural stone patios",
         "Retaining walls & terracing",
-        "Outdoor kitchens & fire features",
-        "Driveway installation",
-        "Decorative walls & borders"
+        "Pathways & steps",
+        "Drainage solutions",
+        "House extensions"
       ],
       link: "#/services/hardscaping",
-      image: "https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/hardscaping-hero-HSC.webp"
     },
     {
-      icon: <Droplets className="w-12 h-12 text-primary-accent" />,
-      title: "Irrigation Systems",
-      description: "Efficient sprinkler systems and drip irrigation to keep your landscape healthy while conserving water.",
+      icon: <Scissors className="w-12 h-12 text-primary-accent" />,
+      title: "Groundskeeping Services",
+      description: "Professional garden maintenance, lawn care, hedge trimming, and cleanup services to keep your outdoor space pristine.",
       features: [
-        "Smart sprinkler installation",
-        "Drip irrigation systems",
-        "Rain sensors & controllers",
-        "System maintenance",
-        "Water pressure optimization",
-        "Leak detection & repair"
+        "Regular lawn maintenance",
+        "Hedge trimming & pruning",
+        "Weed control & removal",
+        "Garden cleanup services",
+        "Seasonal maintenance",
+        "Garden bed care"
       ],
-      link: "#/services/irrigation",
-      image: "https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg?auto=compress&cs=tinysrgb&w=800"
+      link: "#/services/groundskeeping",
+      image: "/groundskeeping-hero-HSC (1).webp"
     },
     {
-      icon: <Flower className="w-12 h-12 text-primary-accent" />,
-      title: "Garden Design & Planting",
-      description: "Beautiful flower beds, vegetable gardens, and seasonal plantings that bring color and life to your property.",
+      icon: <Hammer className="w-12 h-12 text-primary-accent" />,
+      title: "Masonry & Brickwork",
+      description: "Quality masonry services including garden walls, stonework restoration, retaining walls, and brickwork repairs.",
       features: [
-        "Flower bed design",
-        "Vegetable garden setup",
-        "Seasonal planting",
-        "Soil preparation",
-        "Plant care & maintenance",
-        "Garden renovation"
+        "Garden wall construction",
+        "Stonework restoration",
+        "Retaining walls",
+        "Brickwork & repairs",
+        "Stone features",
+        "Wall rendering"
       ],
-      link: "#/services/garden-design",
-      image: "https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      icon: <Wrench className="w-12 h-12 text-primary-accent" />,
-      title: "Tree Services",
-      description: "Professional tree care including pruning, removal, stump grinding, and health assessments.",
-      features: [
-        "Tree pruning & trimming",
-        "Safe tree removal",
-        "Stump grinding",
-        "Tree health assessments",
-        "Emergency tree services",
-        "Hedge trimming"
-      ],
-      link: "#/services/tree-services",
-      image: "https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg?auto=compress&cs=tinysrgb&w=800"
+      link: "#/services/masonry-brickwork",
+      image: "/Brickwork-hero.webp"
     }
   ];
 
@@ -100,10 +70,10 @@ const Services: React.FC = () => {
     <div className="min-h-screen bg-primary-bg text-text-primary">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: `url('https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=1200')`,
+            backgroundImage: `url('/areas-hero-HSC.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
@@ -128,7 +98,7 @@ const Services: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary-bg">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
-            <strong className="text-primary-accent">HSC Builders</strong> offers a complete range of professional landscaping and building services throughout <strong className="text-text-primary">Greater Glasgow</strong> and surrounding areas. From <strong className="text-text-primary">lawn care and maintenance</strong> to <strong className="text-text-primary">custom landscape design</strong> and <strong className="text-text-primary">hardscaping installations</strong>, our experienced team delivers exceptional results that enhance your property's beauty and value. With over <strong className="text-text-primary">16 years of experience</strong>, we're your trusted local experts for all outdoor projects.
+            <strong className="text-primary-accent">HSC Builders</strong> offers a complete range of professional <a href="#/services/landscaping" className="text-primary-accent hover:underline">landscaping</a>, <a href="#/services/hardscaping" className="text-primary-accent hover:underline">hardscaping</a>, <a href="#/services/groundskeeping" className="text-primary-accent hover:underline">groundskeeping</a>, and <a href="#/services/masonry-brickwork" className="text-primary-accent hover:underline">masonry services</a> throughout <strong className="text-text-primary">Greater Glasgow</strong> and <strong className="text-text-primary">South Lanarkshire</strong>. We proudly serve <a href="#/areas/hamilton-landscaping" className="text-primary-accent hover:underline">Hamilton</a>, <a href="#/areas/bothwell-landscaping" className="text-primary-accent hover:underline">Bothwell</a>, <a href="#/areas/jackton-landscaping" className="text-primary-accent hover:underline">Jackton</a>, <a href="#/areas/newton-farm-landscaping" className="text-primary-accent hover:underline">Newton Farm</a>, and surrounding areas. With over <strong className="text-text-primary">16 years of experience</strong>, our team delivers exceptional results that enhance your property's beauty and value.
           </p>
         </div>
       </section>
@@ -138,10 +108,10 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text-primary mb-4">
-              Complete Landscaping Solutions
+              Our Professional Services
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Click on any service below to learn more about our specialized offerings and see detailed information about what's included.
+              From landscaping to hardscaping, groundskeeping to masonry - explore our comprehensive range of services available across Hamilton, Bothwell, Jackton, and Newton Farm.
             </p>
           </div>
 
@@ -254,6 +224,88 @@ const Services: React.FC = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Areas We Serve Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+              Areas We Serve
+            </h2>
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
+              Providing professional landscaping, hardscaping, groundskeeping, and masonry services across South Lanarkshire and Greater Glasgow
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Hamilton",
+                services: [
+                  { title: "Landscaping", link: "#/areas/hamilton-landscaping" },
+                  { title: "Hardscaping", link: "#/areas/hamilton-hardscaping" },
+                  { title: "Groundskeeping", link: "#/areas/hamilton-groundskeeping" },
+                  { title: "Masonry", link: "#/areas/hamilton-masonry" },
+                  { title: "Driveways", link: "#/areas/hamilton-driveways" }
+                ]
+              },
+              {
+                name: "Bothwell",
+                services: [
+                  { title: "Landscaping", link: "#/areas/bothwell-landscaping" },
+                  { title: "Hardscaping", link: "#/areas/bothwell-hardscaping" },
+                  { title: "Groundskeeping", link: "#/areas/bothwell-groundskeeping" },
+                  { title: "Masonry", link: "#/areas/bothwell-masonry" },
+                  { title: "Driveways", link: "#/areas/bothwell-driveways" }
+                ]
+              },
+              {
+                name: "Jackton",
+                services: [
+                  { title: "Landscaping", link: "#/areas/jackton-landscaping" },
+                  { title: "Groundskeeping", link: "#/areas/jackton-groundskeeping" },
+                  { title: "Masonry", link: "#/areas/jackton-masonry" },
+                  { title: "Driveways", link: "#/areas/jackton-driveways" }
+                ]
+              },
+              {
+                name: "Newton Farm",
+                services: [
+                  { title: "Landscaping", link: "#/areas/newton-farm-landscaping" },
+                  { title: "Hardscaping", link: "#/areas/newton-farm-hardscaping" },
+                  { title: "Groundskeeping", link: "#/areas/newton-farm-groundskeeping" },
+                  { title: "Masonry", link: "#/areas/newton-farm-masonry" }
+                ]
+              }
+            ].map((area, index) => (
+              <div key={index} className="bg-secondary-bg border border-border-color rounded-xl p-6 hover:border-primary-accent/50 transition-colors">
+                <h3 className="font-heading text-xl font-bold text-text-primary mb-4">
+                  {area.name}
+                </h3>
+                <ul className="space-y-2">
+                  {area.services.map((service, idx) => (
+                    <li key={idx}>
+                      <a
+                        href={service.link}
+                        className="text-text-secondary hover:text-primary-accent transition-colors flex items-center gap-2 group"
+                      >
+                        <div className="w-1.5 h-1.5 bg-primary-accent rounded-full group-hover:scale-125 transition-transform"></div>
+                        {service.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-text-secondary text-lg">
+              Also serving surrounding areas including East Kilbride, Cambuslang, Rutherglen, and throughout South Lanarkshire
+            </p>
           </div>
         </div>
       </section>
