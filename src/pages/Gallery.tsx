@@ -113,9 +113,7 @@ const Gallery: React.FC = () => {
         "/Gallery-d-way-HSC-after.webp",
         "/HSC-d-way-GAllery-after.webp"
       ],
-      before: "/Gallery-HSC-Before-d-way.webp",
-      after: "/Gallery-d-way-after-HSC.webp",
-      alt: "Complete driveway installation transformation from start to finish"
+      alt: "Complete driveway installation transformation showing before and after images"
     },
     {
       title: "Expert Block Paving Project",
