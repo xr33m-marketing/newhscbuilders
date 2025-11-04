@@ -245,12 +245,12 @@ const Groundskeeping: React.FC = () => {
             {/* Left Column - Content */}
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
               {/* Main Headline */}
-              <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide">
-                Looking for Groundskeeping Services in Hamilton?
+              <h1 className="font-body text-4xl sm:text-6xl lg:text-7xl font-semibold leading-tight mb-6 text-white">
+                Looking for Groundskeepers in Glasgow?
               </h1>
 
-              <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl leading-relaxed font-light">
-                With 17+ years of experience, we specialise in lawn maintenance, hedge trimming, weed removal, garden cleanup, and ongoing grounds maintenance across Hamilton, Bothwell, East Kilbride, Cambuslang, and throughout South Lanarkshire.
+              <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed font-light">
+                From lawn care to hedge trimming, weed control to garden cleanup — covering Hamilton, Bothwell, East Kilbride & beyond.
               </p>
 
               {/* Trust Indicators */}
