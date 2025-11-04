@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const HamiltonGroundskeeping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -124,6 +125,11 @@ const HamiltonGroundskeeping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Groundskeeping Services Hamilton | Lawn Care & Garden Maintenance"
+        description="Professional groundskeeping in Hamilton. Lawn care, hedge trimming, weed control, garden cleanup & maintenance. Reliable service in Hamilton & South Lanarkshire. Free quotes."
+        keywords="groundskeeping Hamilton, lawn care Hamilton, hedge trimming Hamilton, weed control Hamilton, garden maintenance Hamilton, garden cleanup Hamilton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

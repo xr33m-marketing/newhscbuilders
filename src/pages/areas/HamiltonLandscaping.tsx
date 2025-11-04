@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const HamiltonLandscaping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -125,6 +126,11 @@ const HamiltonLandscaping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Landscaping Services Hamilton | Patios, Driveways & Garden Design"
+        description="Professional landscaping services in Hamilton. Patios, artificial turf, driveways, fencing, garden walls & monoblock. Serving Hamilton & South Lanarkshire. Free quotes."
+        keywords="landscaping Hamilton, patios Hamilton, driveways Hamilton, artificial turf Hamilton, garden design Hamilton, fencing Hamilton, monoblock Hamilton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

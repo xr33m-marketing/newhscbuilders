@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const HamiltonHardscaping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -130,6 +131,11 @@ const HamiltonHardscaping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Hardscaping Services Hamilton | Driveways, Block Paving & Patios"
+        description="Expert hardscaping in Hamilton. Driveways, block paving, patios, retaining walls, pathways & steps. Quality installations in Hamilton & South Lanarkshire. Free quotes."
+        keywords="hardscaping Hamilton, driveways Hamilton, block paving Hamilton, patios Hamilton, retaining walls Hamilton, pathways Hamilton, steps Hamilton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

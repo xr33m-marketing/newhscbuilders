@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const BothwellLandscaping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -125,6 +126,11 @@ const BothwellLandscaping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Landscaping Services Bothwell | Patios, Driveways & Garden Design"
+        description="Professional landscaping services in Bothwell. Patios, artificial turf, driveways, fencing, garden walls & monoblock. Serving Bothwell & South Lanarkshire. Free quotes."
+        keywords="landscaping Bothwell, patios Bothwell, driveways Bothwell, artificial turf Bothwell, garden design Bothwell, fencing Bothwell"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 
