@@ -42,8 +42,12 @@ const Gallery: React.FC = () => {
 
   // Patio & Hardscaping Projects
   const patios: Project[] = [
-    { 
-      title: "Natural Stone Patio", 
+    {
+      title: "Natural Stone Patio",
+      images: [
+        "/HSC-patio-landscaping.webp",
+        "/HSC-Transformation-full-Gallery.webp"
+      ],
       after: "/HSC-patio-landscaping.webp",
       alt: "Beautiful natural stone patio installation"
     },
@@ -236,13 +240,22 @@ const Gallery: React.FC = () => {
 
   // Complete Transformations
   const transformations: Project[] = [
-    { 
-      title: "Complete Landscape Renovation", 
+    {
+      title: "Complete Landscape Renovation",
+      images: [
+        "/Landscaping-Full-Renovation-HS.webp",
+        "/Transformation-full-HSC-Gallery.webp",
+        "/Gallery-HSC-Full-transformation.webp"
+      ],
       after: "/Landscaping-Full-Renovation-HS.webp",
       alt: "Complete landscape renovation project"
     },
-    { 
-      title: "Full Garden Transformation", 
+    {
+      title: "Full Garden Transformation",
+      images: [
+        "/HSC-Landscaping-Full-Renovation.webp",
+        "/full-HSC-transformation-Gallery.webp"
+      ],
       after: "/HSC-Landscaping-Full-Renovation.webp",
       alt: "Full garden transformation by HSC Builders"
     },
