@@ -1,6 +1,7 @@
 import React from 'react';
-import { Scissors, TreePine, Droplets, Hammer, ChevronDown, ChevronUp } from 'lucide-react';
+import { Scissors, TreePine, Droplets, Hammer, ChevronDown, ChevronUp, Home } from 'lucide-react';
 import { Button } from './MovingBorderButton';
+import { Link } from 'react-router-dom';
 
 const ServicesPreview: React.FC = () => {
   const [expandedService, setExpandedService] = React.useState<number | null>(null);
@@ -22,6 +23,7 @@ const ServicesPreview: React.FC = () => {
     {
       icon: <TreePine className="w-12 h-12 text-primary-accent" />,
       title: "Landscaping",
+      path: "/services/landscaping",
       description: "Complete landscape transformations including garden design, plant installation, composite decking, fencing, and outdoor living spaces.",
       detailedInfo: {
         expertise: "Our landscape architects and designers create bespoke outdoor spaces tailored to your property's unique characteristics. We specialize in composite materials, natural stone, and plants suited to the Scottish climate.",
@@ -41,6 +43,7 @@ const ServicesPreview: React.FC = () => {
     {
       icon: <Hammer className="w-12 h-12 text-primary-accent" />,
       title: "Hardscaping",
+      path: "/services/hardscaping",
       description: "Professional installation of patios, driveways, retaining walls, and outdoor structures using premium materials and expert craftsmanship.",
       detailedInfo: {
         expertise: "Our hardscaping specialists have extensive experience with natural stone, concrete, block paving, and masonry work. We ensure all installations have proper drainage and foundations for long-lasting results.",
@@ -60,6 +63,7 @@ const ServicesPreview: React.FC = () => {
     {
       icon: <Scissors className="w-12 h-12 text-primary-accent" />,
       title: "Groundskeeping",
+      path: "/services/groundskeeping",
       description: "Comprehensive grounds maintenance including lawn care, hedge trimming, seasonal cleanup, and ongoing property maintenance services.",
       detailedInfo: {
         expertise: "Our groundskeeping team provides reliable, professional maintenance services for residential and commercial properties. We understand local grass types, seasonal requirements, and proper care techniques for Scottish conditions.",
@@ -75,6 +79,26 @@ const ServicesPreview: React.FC = () => {
       },
       image: "/groundskeeping-home-HSC.webp",
       link: "#/services/groundskeeping",
+    },
+    {
+      icon: <Home className="w-12 h-12 text-primary-accent" />,
+      title: "Masonry & Brickwork",
+      path: "/services/masonry-brickwork",
+      description: "Expert masonry and brickwork services including garden walls, stonework restoration, retaining walls, and decorative brickwork.",
+      detailedInfo: {
+        expertise: "Our skilled masons bring decades of experience in traditional and contemporary brickwork. We work with natural stone, brick, and block materials to create durable, beautiful structures that stand the test of time.",
+        services: [
+          "Garden walls and boundaries",
+          "Retaining walls and terracing",
+          "Stone wall restoration and repair",
+          "Decorative brickwork and features",
+          "Chimney repairs and rebuilding",
+          "Property extensions and alterations"
+        ],
+        benefits: "Professional masonry adds timeless character and structural integrity to your property. Our craftsmen ensure proper construction techniques, appropriate materials, and finishes that complement your property's architectural style."
+      },
+      image: "/Brickwork-hero.webp",
+      link: "#/services/masonry-brickwork"
     }
   ];
 
@@ -104,9 +128,11 @@ const ServicesPreview: React.FC = () => {
               {/* Content */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div>
-                  <h3 className="text-2xl font-heading font-bold text-text-primary mb-6">
-                    {service.title}
-                  </h3>
+                  <Link to={service.path} className="hover:text-primary-accent transition-colors">
+                    <h3 className="text-2xl font-heading font-bold text-text-primary mb-6 hover:text-primary-accent transition-colors">
+                      {service.title}
+                    </h3>
+                  </Link>
                   
                   <p className="text-text-secondary text-lg mb-6 leading-relaxed">
                     {service.description}
