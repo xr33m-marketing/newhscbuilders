@@ -31,6 +31,12 @@
     <meta name="geo.placename" content="Hamilton, South Lanarkshire" />
     <meta name="geo.position" content="55.7795;-4.0390" />
     <meta name="ICBM" content="55.7795, -4.0390" />
+    <!-- Force HTTPS and canonical domain -->
+    <script>
+      if (window.location.protocol === 'http:' || window.location.hostname === 'www.hscbuilders.co.uk') {
+        window.location.replace('https://hscbuilders.co.uk' + window.location.pathname + window.location.search + window.location.hash);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

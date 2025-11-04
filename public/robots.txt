@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow:
+
+# Canonical domain
+Host: https://hscbuilders.co.uk
 
 Sitemap: https://hscbuilders.co.uk/sitemap.xml

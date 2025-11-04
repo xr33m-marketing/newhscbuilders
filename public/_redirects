@@ -1,0 +1,9 @@
+# Redirect all HTTP to HTTPS
+http://hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
+http://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
+
+# Redirect www to non-www
+https://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
+
+# SPA fallback - serve index.html for all routes
+/*    /index.html   200
