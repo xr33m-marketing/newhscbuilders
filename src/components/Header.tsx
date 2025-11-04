@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Triangle } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null);
 
@@ -22,54 +33,21 @@ const Header: React.FC = () => {
         {
           name: 'Landscaping',
           href: '/services/landscaping',
-          hasSubDropdown: true,
-          subDropdownItems: [
-            { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '/areas/jackton-landscaping' },
-            { name: 'Bothwell', href: '/areas/bothwell-landscaping' },
-            { name: 'Hamilton', href: '/areas/hamilton-landscaping' },
-            { name: 'Newton Farm', href: '/areas/newton-farm-landscaping' },
-          ]
         },
         {
           name: 'Hardscaping',
           href: '/services/hardscaping',
-          hasSubDropdown: true,
-          subDropdownItems: [
-            { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '/areas/jackton-driveways' },
-            { name: 'Bothwell', href: '/areas/bothwell-hardscaping' },
-            { name: 'Hamilton', href: '/areas/hamilton-hardscaping' },
-            { name: 'Newton Farm', href: '/areas/newton-farm-hardscaping' },
-          ]
         },
         {
           name: 'Groundskeeping',
           href: '/services/groundskeeping',
-          hasSubDropdown: true,
-          subDropdownItems: [
-            { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '/areas/jackton-groundskeeping' },
-            { name: 'Bothwell', href: '/areas/bothwell-groundskeeping' },
-            { name: 'Hamilton', href: '/areas/hamilton-groundskeeping' },
-            { name: 'Newton Farm', href: '/areas/newton-farm-groundskeeping' },
-          ]
         },
         {
           name: 'Masonry & Brickwork',
           href: '/services/masonry-brickwork',
-          hasSubDropdown: true,
-          subDropdownItems: [
-            { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '/areas/jackton-masonry' },
-            { name: 'Bothwell', href: '/areas/bothwell-masonry' },
-            { name: 'Hamilton', href: '/areas/hamilton-masonry' },
-            { name: 'Newton Farm', href: '/areas/newton-farm-masonry' },
-          ]
         },
       ]
     },
-    { name: 'Areas', href: '/areas' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Reviews', href: '/reviews' },
     { name: 'FAQ', href: '/faq' },
@@ -207,8 +185,8 @@ const Header: React.FC = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-white border-opacity-20 bg-black">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="lg:hidden fixed inset-0 top-20 bg-black z-40 overflow-y-auto">
+            <div className="px-2 pt-2 pb-3 space-y-1 min-h-full">
               {navigationItems.map((item) => (
               <div key={item.name}>
                 {item.hasDropdown ? (
