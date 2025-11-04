@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const BothwellMasonry: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -123,6 +124,11 @@ const BothwellMasonry: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Masonry Services Bothwell | Garden Walls & Stonework"
+        description="Expert masonry services in Bothwell. Garden walls, stonework restoration, retaining walls, brickwork & repairs. Quality craftsmanship in Bothwell & South Lanarkshire. Free quotes."
+        keywords="masonry Bothwell, garden walls Bothwell, stonework Bothwell, brickwork Bothwell, retaining walls Bothwell"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const BothwellDriveways: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -130,6 +131,11 @@ const BothwellDriveways: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Driveways Bothwell | Block Paving & Tarmac Specialists"
+        description="Expert driveway services in Bothwell. Block paving, tarmac, resin-bound driveways, repairs & installations. Quality workmanship in Bothwell & South Lanarkshire. Free quotes."
+        keywords="driveways Bothwell, block paving Bothwell, tarmac driveways Bothwell, driveway installation Bothwell, resin driveways Bothwell"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

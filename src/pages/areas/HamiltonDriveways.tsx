@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const HamiltonDriveways: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -130,6 +131,11 @@ const HamiltonDriveways: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Driveways Hamilton | Block Paving & Tarmac Specialists"
+        description="Expert driveway services in Hamilton. Block paving, tarmac, resin-bound driveways, repairs & installations. Quality workmanship in Hamilton & South Lanarkshire. Free quotes."
+        keywords="driveways Hamilton, block paving Hamilton, tarmac driveways Hamilton, driveway installation Hamilton, resin driveways Hamilton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

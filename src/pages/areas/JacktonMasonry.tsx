@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const JacktonMasonry: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -123,6 +124,11 @@ const JacktonMasonry: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Masonry Services Jackton | Garden Walls & Stonework"
+        description="Expert masonry services in Jackton. Garden walls, stonework restoration, retaining walls, brickwork & repairs. Quality craftsmanship in Jackton & South Lanarkshire. Free quotes."
+        keywords="masonry Jackton, garden walls Jackton, stonework Jackton, brickwork Jackton, retaining walls Jackton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const BothwellHardscaping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -130,6 +131,11 @@ const BothwellHardscaping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Hardscaping Bothwell | Patios, Driveways & Retaining Walls"
+        description="Expert hardscaping in Bothwell. Driveways, block paving, patios, retaining walls, pathways & steps. Quality installations in Bothwell & South Lanarkshire. Free quotes."
+        keywords="hardscaping Bothwell, patios Bothwell, driveways Bothwell, retaining walls Bothwell, block paving Bothwell"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

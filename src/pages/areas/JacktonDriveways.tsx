@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const JacktonDriveways: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -130,6 +131,11 @@ const JacktonDriveways: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Driveways Jackton | Block Paving & Tarmac Specialists"
+        description="Expert driveway services in Jackton. Block paving, tarmac, resin-bound driveways, repairs & installations. Quality workmanship in Jackton & South Lanarkshire. Free quotes."
+        keywords="driveways Jackton, block paving Jackton, tarmac driveways Jackton, driveway installation Jackton, resin driveways Jackton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

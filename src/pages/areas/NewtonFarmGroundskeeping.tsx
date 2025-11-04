@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const NewtonFarmGroundskeeping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -124,6 +125,11 @@ const NewtonFarmGroundskeeping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Groundskeeping Newton Farm | Lawn Care & Garden Maintenance"
+        description="Professional groundskeeping in Newton Farm. Lawn care, hedge trimming, weed control, garden cleanup & maintenance. Reliable service in Newton Farm & South Lanarkshire. Free quotes."
+        keywords="groundskeeping Newton Farm, lawn care Newton Farm, hedge trimming Newton Farm, garden maintenance Newton Farm, weed control Newton Farm"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

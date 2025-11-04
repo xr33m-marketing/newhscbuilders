@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const NewtonFarmMasonry: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -123,6 +124,11 @@ const NewtonFarmMasonry: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Masonry Services Newton Farm | Garden Walls & Stonework"
+        description="Expert masonry services in Newton Farm. Garden walls, stonework restoration, retaining walls, brickwork & repairs. Quality craftsmanship in Newton Farm & South Lanarkshire. Free quotes."
+        keywords="masonry Newton Farm, garden walls Newton Farm, stonework Newton Farm, brickwork Newton Farm, retaining walls Newton Farm"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

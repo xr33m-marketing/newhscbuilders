@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const JacktonGroundskeeping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -124,6 +125,11 @@ const JacktonGroundskeeping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Groundskeeping Jackton | Lawn Care & Garden Maintenance"
+        description="Professional groundskeeping in Jackton. Lawn care, hedge trimming, weed control, garden cleanup & maintenance. Reliable service in Jackton & South Lanarkshire. Free quotes."
+        keywords="groundskeeping Jackton, lawn care Jackton, hedge trimming Jackton, garden maintenance Jackton, weed control Jackton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 

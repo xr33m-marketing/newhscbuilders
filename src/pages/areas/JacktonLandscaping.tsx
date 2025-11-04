@@ -3,6 +3,7 @@ import { Star, Phone, MessageCircle, ChevronDown, MapPin, Award, Shield, CheckCi
 import { Button } from '../../components/MovingBorderButton';
 import LogoSlider from '../../components/LogoSlider';
 import ProjectCard, { Project } from '../../components/ProjectCard';
+import { SEO } from '../../components/SEO';
 
 const JacktonLandscaping: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -125,6 +126,11 @@ const JacktonLandscaping: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Landscaping Services Jackton | Patios, Driveways & Garden Design"
+        description="Professional landscaping services in Jackton. Patios, artificial turf, driveways, fencing, garden walls & monoblock. Serving Jackton & South Lanarkshire. Free quotes."
+        keywords="landscaping Jackton, patios Jackton, driveways Jackton, artificial turf Jackton, garden design Jackton, fencing Jackton"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         <div 
