@@ -158,7 +158,7 @@ const BothwellLandscaping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Creating distinguished outdoor spaces for discerning Bothwell homeowners with 16+ years of trusted expertise.
+                Creating distinguished outdoor spaces for discerning Bothwell homeowners with 17+ years of trusted expertise.
               </p>
 
               {/* Trust Indicators */}
@@ -362,7 +362,7 @@ const BothwellLandscaping: React.FC = () => {
               Why Bothwell Homeowners Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Trusted expertise and premium results that match Bothwell's high standards for over 16 years.
+              Trusted expertise and premium results that match Bothwell's high standards for over 17 years.
             </p>
           </div>
 

@@ -181,7 +181,7 @@ const Groundskeeping: React.FC = () => {
     },
     {
       question: "Why choose HSC Builders for groundskeeping in Glasgow?",
-      answer: "Our team combines 16+ years of experience with reliable, scheduled services tailored to each client. We focus on consistency, attention to detail, and keeping your outdoor spaces looking their best throughout the year."
+      answer: "Our team combines 17+ years of experience with reliable, scheduled services tailored to each client. We focus on consistency, attention to detail, and keeping your outdoor spaces looking their best throughout the year."
     }
   ];
 
@@ -582,14 +582,14 @@ const Groundskeeping: React.FC = () => {
               Why Choose HSC Builders for Groundskeeping?
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              With over 16 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every groundskeeping project.
+              With over 17 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every groundskeeping project.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">
             {[
               {
-                title: "16+ Years Experience",
+                title: "17+ Years Experience",
                 description: "Proven expertise in groundskeeping and garden maintenance across Greater Glasgow with a track record of successful projects.",
                 icon: <Award className="w-6 h-6" />,
               },

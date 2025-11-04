@@ -358,7 +358,7 @@ const NewtonFarmGroundskeeping: React.FC = () => {
               Why Newton Farm Residents Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Modern groundskeeping solutions and reliable service that Newton Farm homeowners have trusted for over 16 years.
+              Modern groundskeeping solutions and reliable service that Newton Farm homeowners have trusted for over 17 years.
             </p>
           </div>
 

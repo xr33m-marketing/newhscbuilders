@@ -6,11 +6,11 @@ const LogoSlider: React.FC = () => {
   const trustSignals = [
     {
       icon: <Trophy className="w-6 h-6 text-primary-accent" />,
-      text: "16+ Years in Landscaping"
+      text: "17+ Years in Landscaping"
     },
     {
       icon: <Star className="w-6 h-6 text-primary-accent" />,
-      text: "4.9★ Google Reviews"
+      text: "5.0★ Google Reviews"
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-primary-accent" />,

@@ -103,7 +103,7 @@ const Areas: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary-bg">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg sm:text-xl text-text-secondary leading-relaxed">
-            At <strong className="text-primary-accent">HSC Builders</strong>, we provide professional landscaping, groundskeeping, and hardscaping services across <strong className="text-text-primary">Newton Farm, Jackton, Hamilton</strong>, and surrounding areas in <strong className="text-text-primary">Greater Glasgow</strong>. Whether you're looking for a complete garden transformation, patio installation, or regular maintenance, our experienced team delivers quality results you can trust. With over 16 years of experience serving communities throughout <strong className="text-text-primary">South Lanarkshire</strong> and beyond, we're your local experts for all outdoor projects.
+            At <strong className="text-primary-accent">HSC Builders</strong>, we provide professional landscaping, groundskeeping, and hardscaping services across <strong className="text-text-primary">Newton Farm, Jackton, Hamilton</strong>, and surrounding areas in <strong className="text-text-primary">Greater Glasgow</strong>. Whether you're looking for a complete garden transformation, patio installation, or regular maintenance, our experienced team delivers quality results you can trust. With over 17 years of experience serving communities throughout <strong className="text-text-primary">South Lanarkshire</strong> and beyond, we're your local experts for all outdoor projects.
           </p>
         </div>
       </section>

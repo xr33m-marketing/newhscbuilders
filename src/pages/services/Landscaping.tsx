@@ -366,7 +366,7 @@ const Landscaping: React.FC = () => {
     },
     {
       question: "Why choose HSC Builders for landscaping in Glasgow?",
-      answer: "With 16+ years of experience, our team combines skilled craftsmanship, high-quality materials, and a client-first approach. We deliver tailored solutions, clear communication, and results that improve both kerb appeal and long-term value."
+      answer: "With 17+ years of experience, our team combines skilled craftsmanship, high-quality materials, and a client-first approach. We deliver tailored solutions, clear communication, and results that improve both kerb appeal and long-term value."
     }
   ];
 

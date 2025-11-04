@@ -34,15 +34,15 @@ function App() {
   // Update meta description based on current path
   React.useEffect(() => {
     const metaDescriptions = {
-      '/': "HSC Builders – Expert landscaping, hardscaping & groundskeeping in Glasgow. Over 16 years' experience delivering beautiful, lasting outdoor spaces. Get a free quote today.",
-      '/about': "Learn more about HSC Builders – trusted landscaping & building experts in Glasgow with 16+ years of experience. Quality, reliability & customer-first service.",
+      '/': "HSC Builders – Expert landscaping, hardscaping & groundskeeping in Glasgow. Over 17 years' experience delivering beautiful, lasting outdoor spaces. Get a free quote today.",
+      '/about': "Learn more about HSC Builders – trusted landscaping & building experts in Glasgow with 17+ years of experience. Quality, reliability & customer-first service.",
       '/services/landscaping': "Transform your garden with HSC Builders' landscaping in Glasgow. From turf & artificial grass to fencing, decking & planting, we create stunning outdoor spaces.",
       '/services/hardscaping': "HSC Builders – Glasgow's hardscaping specialists. Driveways, patios, brickwork & paving built to last with expert craftsmanship. Free consultations available.",
       '/services/groundskeeping': "Reliable groundskeeping services in Glasgow from HSC Builders. Lawn care, hedge trimming & year-round garden maintenance to keep your outdoor space pristine.",
       '/services/masonry-brickwork': "Expert masonry & brickwork services in Glasgow from HSC Builders. Walls, steps, restoration & structural work with traditional craftsmanship. Free quotes available.",
       '/gallery': "View HSC Builders' landscaping, hardscaping & groundskeeping projects across Glasgow. Real transformations with expert design & craftsmanship.",
       '/contact': "Contact HSC Builders in Glasgow today. Get a free consultation & quote for expert landscaping, hardscaping & groundskeeping services tailored to your needs.",
-      '/reviews': "Read customer reviews for HSC Builders Glasgow. See why we're the trusted choice for landscaping, hardscaping & groundskeeping with 16+ years experience.",
+      '/reviews': "Read customer reviews for HSC Builders Glasgow. See why we're the trusted choice for landscaping, hardscaping & groundskeeping with 17+ years experience.",
       '/areas': "HSC Builders serves Greater Glasgow including Newton Farm, Jackton, Hamilton & East Kilbride. Professional landscaping & building services across Lanarkshire.",
       '/faq': "HSC Builders FAQ – Get answers about our landscaping, hardscaping & groundskeeping services in Glasgow. Pricing, timelines & service information."
     };

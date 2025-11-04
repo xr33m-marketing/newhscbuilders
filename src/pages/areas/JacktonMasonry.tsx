@@ -156,7 +156,7 @@ const JacktonMasonry: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Trusted by Jackton homeowners for 16+ years with skilled craftsmanship and modern techniques.
+                Trusted by Jackton homeowners for 17+ years with skilled craftsmanship and modern techniques.
               </p>
 
               {/* Trust Indicators */}
@@ -357,7 +357,7 @@ const JacktonMasonry: React.FC = () => {
               Why Jackton Homeowners Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Expert masonry craftsmanship and reliable service that Jackton residents have trusted for over 16 years.
+              Expert masonry craftsmanship and reliable service that Jackton residents have trusted for over 17 years.
             </p>
           </div>
 

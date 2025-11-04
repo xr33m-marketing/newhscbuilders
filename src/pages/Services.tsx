@@ -219,14 +219,14 @@ const Services: React.FC = () => {
               Why Choose HSC Builders?
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              With over 16 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every project.
+              With over 17 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every project.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "16+ Years Experience",
+                title: "17+ Years Experience",
                 description: "Proven track record of successful projects across Greater Glasgow"
               },
               {

@@ -118,8 +118,8 @@ export default function AboutUsSection() {
 
   const stats = [
     { icon: <Award />, value: 150, label: "Projects Completed", suffix: "+" },
-    { icon: <Users />, value: 100, label: "Happy Clients", suffix: "+" },
-    { icon: <Calendar />, value: 16, label: "Years Experience", suffix: "+" },
+    { icon: <Users />, value: 150, label: "Happy Clients", suffix: "+" },
+    { icon: <Calendar />, value: 17, label: "Years Experience", suffix: "+" },
     { icon: <TrendingUp />, value: 100, label: "Satisfaction Rate", suffix: "%" },
   ]
 
@@ -190,7 +190,7 @@ export default function AboutUsSection() {
         </motion.div>
 
         <motion.p className="text-center max-w-2xl mx-auto mb-16 text-text-secondary" variants={itemVariants}>
-          At HSC Builders, we are a trusted construction and landscaping company serving Glasgow and Lanarkshire, with over 16 years of professional experience across building and outdoor projects.
+          At HSC Builders, we are a trusted construction and landscaping company serving Glasgow and Lanarkshire, with over 17 years of professional experience across building and outdoor projects.
         </motion.p>
         
         <motion.p className="text-center max-w-2xl mx-auto mb-16 text-text-secondary" variants={itemVariants}>

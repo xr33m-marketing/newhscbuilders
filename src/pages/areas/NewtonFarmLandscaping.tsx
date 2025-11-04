@@ -158,7 +158,7 @@ const NewtonFarmLandscaping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Trusted by Newton Farm residents for 16+ years with innovative designs and premium materials.
+                Trusted by Newton Farm residents for 17+ years with innovative designs and premium materials.
               </p>
 
               {/* Trust Indicators */}
@@ -362,7 +362,7 @@ const NewtonFarmLandscaping: React.FC = () => {
               Why Newton Farm Residents Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Modern expertise and innovative solutions that Newton Farm homeowners have trusted for over 16 years.
+              Modern expertise and innovative solutions that Newton Farm homeowners have trusted for over 17 years.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Clock, Shield, Award, Star, Send, MessageCircle } from 'lucide-react';
 import { Button } from '../components/MovingBorderButton';
 
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
 
   const trustBadges = [
     { icon: <Shield className="w-5 h-5" />, text: "Fully Insured" },
-    { icon: <Star className="w-5 h-5" />, text: "16+ Years Experience" },
+    { icon: <Star className="w-5 h-5" />, text: "17+ Years Experience" },
     { icon: <Star className="w-5 h-5" />, text: "Google Verified" }
   ];
 

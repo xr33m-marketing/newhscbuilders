@@ -14,7 +14,7 @@ import {
 export function WhyChooseUsSection() {
   const features = [
     {
-      title: "16+ Years Experience",
+      title: "17+ Years Experience",
       description: "Proven expertise in landscaping and building across Greater Glasgow with a track record of successful projects.",
       icon: <Award className="w-6 h-6" />,
     },
@@ -63,7 +63,7 @@ export function WhyChooseUsSection() {
             Why Choose HSC Builders?
           </h2>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-            With over 16 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every project.
+            With over 17 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every project.
           </p>
         </div>
 

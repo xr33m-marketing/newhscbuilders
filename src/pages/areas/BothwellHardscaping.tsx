@@ -364,7 +364,7 @@ const BothwellHardscaping: React.FC = () => {
               Why Bothwell Homeowners Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Premium hardscaping installation and exceptional service that Bothwell residents have trusted for over 16 years.
+              Premium hardscaping installation and exceptional service that Bothwell residents have trusted for over 17 years.
             </p>
           </div>
 

@@ -158,7 +158,7 @@ const HamiltonLandscaping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Serving Hamilton families for 16+ years with practical outdoor solutions that fit busy lifestyles.
+                Serving Hamilton families for 17+ years with practical outdoor solutions that fit busy lifestyles.
               </p>
 
               {/* Trust Indicators */}
@@ -362,7 +362,7 @@ const HamiltonLandscaping: React.FC = () => {
               Why Hamilton Families Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Practical expertise and reliable service that Hamilton homeowners have trusted for over 16 years.
+              Practical expertise and reliable service that Hamilton homeowners have trusted for over 17 years.
             </p>
           </div>
 

@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
     general: [
       {
         question: "What services do you offer?",
-        answer: "We provide comprehensive landscaping and building services including lawn care, landscape design, hardscaping, irrigation systems, tree services, and general building work. Our team has over 16 years of experience serving Greater Glasgow and surrounding areas.",
+        answer: "We provide comprehensive landscaping and building services including lawn care, landscape design, hardscaping, irrigation systems, tree services, and general building work. Our team has over 17 years of experience serving Greater Glasgow and surrounding areas.",
         details: [
           "Weekly/bi-weekly lawn maintenance",
           "Custom landscape design and installation", 
@@ -255,7 +255,7 @@ const FAQ: React.FC = () => {
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary-bg">
         <div className="max-w-4xl mx-auto">
           <p className="text-text-secondary leading-relaxed text-center">
-            At HSC Builders, we understand that choosing the right landscaping and building contractor involves many considerations. Our FAQ section addresses the most common questions about our services, but we know every project is unique. Whether you're wondering about specific plant varieties for Scottish weather, the best time for hardscaping projects, or how we handle unexpected site conditions, our experienced team is here to help. We've been serving Greater Glasgow for over 16 years, and we've learned that clear communication and transparency are just as important as quality workmanship. If you have questions not covered here, don't hesitate to reach out – we're always happy to discuss your specific needs and provide detailed information about how we can help transform your outdoor space.
+            At HSC Builders, we understand that choosing the right landscaping and building contractor involves many considerations. Our FAQ section addresses the most common questions about our services, but we know every project is unique. Whether you're wondering about specific plant varieties for Scottish weather, the best time for hardscaping projects, or how we handle unexpected site conditions, our experienced team is here to help. We've been serving Greater Glasgow for over 17 years, and we've learned that clear communication and transparency are just as important as quality workmanship. If you have questions not covered here, don't hesitate to reach out – we're always happy to discuss your specific needs and provide detailed information about how we can help transform your outdoor space.
           </p>
         </div>
       </section>

@@ -358,7 +358,7 @@ const HamiltonGroundskeeping: React.FC = () => {
               Why Hamilton Families Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Dependable groundskeeping services that Hamilton homeowners have trusted for over 16 years.
+              Dependable groundskeeping services that Hamilton homeowners have trusted for over 17 years.
             </p>
           </div>
 

@@ -72,7 +72,7 @@ export const Footer7 = ({
     title: "H&C BUILDERS",
   },
   sections = defaultSections,
-  description = "Professional building and construction services in Glasgow and surrounding areas. House extensions, renovations, and general building work with over 16 years of experience.",
+  description = "Professional building and construction services in Glasgow and surrounding areas. House extensions, renovations, and general building work with over 17 years of experience.",
   socialLinks = defaultSocialLinks,
   copyright = "© 2025 HSC Builders. All rights reserved.",
   legalLinks = defaultLegalLinks,

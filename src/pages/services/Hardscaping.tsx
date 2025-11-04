@@ -157,7 +157,7 @@ const Hardscaping: React.FC = () => {
       title: "Driveways & Block Paving",
       description: "Durable driveway construction using monoblock, natural stone, and concrete with proper foundations and drainage for long-lasting vehicle access.",
       detailedInfo: {
-        expertise: "We specialize in driveway construction with over 16 years of experience in monoblock, natural stone, and concrete installations. Our team understands load-bearing requirements, drainage needs, and proper edge restraints for durable driveways.",
+        expertise: "We specialize in driveway construction with over 17 years of experience in monoblock, natural stone, and concrete installations. Our team understands load-bearing requirements, drainage needs, and proper edge restraints for durable driveways.",
         services: [
           "Monoblock driveway installation",
           "Natural stone driveway construction",
@@ -504,7 +504,7 @@ const Hardscaping: React.FC = () => {
               At HSC Builders, we provide expert hardscaping solutions designed to transform your outdoor space with durability and style. From driveways and patios to brickwork, pathways, steps, and garden walls, our team delivers craftsmanship that lasts.
             </p>
             <p>
-              With over 16 years of experience, we combine quality materials, skilled trades, and tailored designs to create hardscapes that boost kerb appeal and add real value to your property. Whether you want a practical driveway, a modern patio, or custom masonry, HSC Builders ensures a professional, stress-free experience from start to finish.
+              With over 17 years of experience, we combine quality materials, skilled trades, and tailored designs to create hardscapes that boost kerb appeal and add real value to your property. Whether you want a practical driveway, a modern patio, or custom masonry, HSC Builders ensures a professional, stress-free experience from start to finish.
             </p>
           </div>
         </div>
@@ -798,14 +798,14 @@ const Hardscaping: React.FC = () => {
               Why Choose HSC Builders for Hardscaping?
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              With over 16 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every hardscaping project.
+              With over 17 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every hardscaping project.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 max-w-7xl mx-auto">
             {[
               {
-                title: "16+ Years Experience",
+                title: "17+ Years Experience",
                 description: "Proven expertise in hardscaping and masonry across Greater Glasgow with a track record of successful projects.",
                 icon: <Award className="w-6 h-6" />,
               },

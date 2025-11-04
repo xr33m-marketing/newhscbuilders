@@ -495,7 +495,7 @@ const MasonryBrickwork: React.FC = () => {
               At HSC Builders, we provide expert masonry and brickwork services across Greater Glasgow and surrounding areas. Our skilled craftsmen combine traditional techniques with modern materials to deliver exceptional results for residential and commercial properties.
             </motion.p>
             <motion.p variants={fadeInUp}>
-              From boundary walls and garden features to structural work and restoration projects, we handle all aspects of masonry with precision and care. With over 16 years of experience, we understand Scottish building standards and use appropriate materials for lasting durability in local weather conditions.
+              From boundary walls and garden features to structural work and restoration projects, we handle all aspects of masonry with precision and care. With over 17 years of experience, we understand Scottish building standards and use appropriate materials for lasting durability in local weather conditions.
             </motion.p>
           </motion.div>
         </div>
@@ -779,7 +779,7 @@ const MasonryBrickwork: React.FC = () => {
               variants={fadeInUp}
               className="text-lg text-text-secondary max-w-3xl mx-auto"
             >
-              With over 16 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every masonry project.
+              With over 17 years of experience serving Greater Glasgow, we bring expertise, reliability, and exceptional results to every masonry project.
             </motion.p>
           </motion.div>
 
@@ -789,7 +789,7 @@ const MasonryBrickwork: React.FC = () => {
           >
             {[
               {
-                title: "16+ Years Experience",
+                title: "17+ Years Experience",
                 description: "Proven expertise in masonry and brickwork across Greater Glasgow with traditional and modern techniques.",
                 icon: <Award className="w-6 h-6" />,
               },

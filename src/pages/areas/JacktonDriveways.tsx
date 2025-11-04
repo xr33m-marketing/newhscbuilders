@@ -163,7 +163,7 @@ const JacktonDriveways: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Trusted by Jackton homeowners for 16+ years with expert installation and premium materials.
+                Trusted by Jackton homeowners for 17+ years with expert installation and premium materials.
               </p>
 
               {/* Trust Indicators */}
@@ -367,7 +367,7 @@ const JacktonDriveways: React.FC = () => {
               Why Jackton Homeowners Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Expert driveway installation and reliable service that Jackton residents have trusted for over 16 years.
+              Expert driveway installation and reliable service that Jackton residents have trusted for over 17 years.
             </p>
           </div>
 

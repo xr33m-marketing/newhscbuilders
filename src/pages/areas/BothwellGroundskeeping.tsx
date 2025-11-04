@@ -157,7 +157,7 @@ const BothwellGroundskeeping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Serving discerning Bothwell homeowners for 16+ years with white-glove service and exceptional attention to detail.
+                Serving discerning Bothwell homeowners for 17+ years with white-glove service and exceptional attention to detail.
               </p>
 
               {/* Trust Indicators */}
@@ -358,7 +358,7 @@ const BothwellGroundskeeping: React.FC = () => {
               Why Bothwell's Elite Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Premium groundskeeping services and white-glove care that Bothwell's most discerning homeowners have trusted for over 16 years.
+              Premium groundskeeping services and white-glove care that Bothwell's most discerning homeowners have trusted for over 17 years.
             </p>
           </div>
 

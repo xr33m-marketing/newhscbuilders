@@ -6,7 +6,7 @@ import OurProcessSection from '../components/OurProcessSection';
 
 const About: React.FC = () => {
   const stats = [
-    { icon: <Calendar className="w-6 h-6" />, value: "16+", label: "Years Experience" },
+    { icon: <Calendar className="w-6 h-6" />, value: "17+", label: "Years Experience" },
     { icon: <Home className="w-6 h-6" />, value: "150+", label: "Projects Completed" },
     { icon: <Star className="w-6 h-6" />, value: "5.0★", label: "Average Rating" }
   ];
@@ -103,13 +103,13 @@ const About: React.FC = () => {
             <div className="flex flex-wrap items-center gap-4 mb-8">
               <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
                 <Star className="w-4 h-4 fill-primary-accent text-primary-accent" />
-                <span className="text-white text-sm font-medium">4.9/5</span>
+                <span className="text-white text-sm font-medium">5.0/5</span>
               </div>
               <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
                 <span className="text-white text-sm font-medium">Fully Insured</span>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-                <span className="text-white text-sm font-medium">16+ Years</span>
+                <span className="text-white text-sm font-medium">17+ Years</span>
               </div>
             </div>
 

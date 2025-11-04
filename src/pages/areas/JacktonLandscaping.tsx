@@ -159,7 +159,7 @@ const JacktonLandscaping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Proudly transforming Jackton gardens for over 16 years with expert landscaping and premium materials.
+                Proudly transforming Jackton gardens for over 17 years with expert landscaping and premium materials.
               </p>
 
               {/* Trust Indicators */}
@@ -346,7 +346,7 @@ const JacktonLandscaping: React.FC = () => {
           </h2>
           <div className="space-y-6 text-lg sm:text-xl text-text-secondary leading-relaxed">
             <p>
-              Jackton's growing community of modern family homes deserves landscaping that matches the area's contemporary style and family-focused lifestyle. At HSC Builders, we've been transforming Jackton gardens for over 16 years, creating outdoor spaces that complement the neighborhood's character while providing practical, low-maintenance solutions for busy families.
+              Jackton's growing community of modern family homes deserves landscaping that matches the area's contemporary style and family-focused lifestyle. At HSC Builders, we've been transforming Jackton gardens for over 17 years, creating outdoor spaces that complement the neighborhood's character while providing practical, low-maintenance solutions for busy families.
             </p>
             <p>
               From composite decking perfect for entertaining to artificial turf that stays green year-round, we understand what Jackton homeowners value most: quality, durability, and designs that enhance both property value and family life. Our local expertise means we know exactly which materials and plants work best in your South Lanarkshire location.
@@ -363,7 +363,7 @@ const JacktonLandscaping: React.FC = () => {
               Why Jackton Residents Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Local expertise, proven results, and a commitment to excellence that Jackton families have trusted for over 16 years.
+              Local expertise, proven results, and a commitment to excellence that Jackton families have trusted for over 17 years.
             </p>
           </div>
 

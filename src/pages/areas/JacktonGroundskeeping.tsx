@@ -157,7 +157,7 @@ const JacktonGroundskeeping: React.FC = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white mb-8 max-w-xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Trusted by Jackton families for 16+ years with consistent, reliable service that fits your busy lifestyle.
+                Trusted by Jackton families for 17+ years with consistent, reliable service that fits your busy lifestyle.
               </p>
 
               {/* Trust Indicators */}
@@ -358,7 +358,7 @@ const JacktonGroundskeeping: React.FC = () => {
               Why Jackton Families Choose HSC Builders
             </h2>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-              Reliable groundskeeping service and professional care that Jackton homeowners have trusted for over 16 years.
+              Reliable groundskeeping service and professional care that Jackton homeowners have trusted for over 17 years.
             </p>
           </div>
 

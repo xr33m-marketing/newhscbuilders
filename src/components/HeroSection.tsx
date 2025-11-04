@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
             </h2>
             
             <p className="text-base sm:text-xl text-white mb-6 sm:mb-8 max-w-xl sm:max-w-2xl leading-normal sm:leading-relaxed font-medium" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9)' }}>
-              With 16+ years of trusted results, we create stunning outdoor spaces — from bespoke patios to pristine lawns and full garden maintenance.
+              With 17+ years of trusted results, we create stunning outdoor spaces — from bespoke patios to pristine lawns and full garden maintenance.
             </p>
 
             {/* Trust Indicators */}
