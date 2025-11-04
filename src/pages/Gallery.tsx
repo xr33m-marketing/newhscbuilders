@@ -277,10 +277,8 @@ const Gallery: React.FC = () => {
     },
     {
       title: "Complete Transformation",
-      before: "/full-transformation-HSC-Before.webp",
       images: [
         "/full-transformation-HSC-Before.webp",
-        "/Landscaping-HSC-Full-Transformation.webp",
         "/hsc-patio-after-transformation.webp",
         "/hsc-driveway-full-after-transformation.webp",
         "/hsc-landscaping-after-transformation.webp",
@@ -288,18 +286,21 @@ const Gallery: React.FC = () => {
         "/gallery-driveway-after-transformation.webp",
         "/hsc-patio-full-after-transformation.webp"
       ],
-      after: "/Landscaping-HSC-Full-Transformation.webp",
+      after: "/hsc-landscaping-after-transformation.webp",
       alt: "Complete landscape transformation project transformation"
     },
-    { 
-      title: "Full Garden Transformation", 
-     before: "/HSC-full-transformation-Before.webp",
-      after: "/After-HSC-Full-transformation-Gallery.webp",
+    {
+      title: "Full Garden Transformation",
       images: [
-        "/Full-Transformation-HSC-After-Gallery.webp",
-        "/HSC-Gallery-Full-TRansformation.webp"
+        "/gallery-before-transformation.webp",
+        "/hsc-before-transformation.webp",
+        "/hsc-full-before-transformation.webp",
+        "/hsc-driveway-after-transformation.webp",
+        "/gallery-full-after-transformation.webp",
+        "/gallery-after-transformation.webp"
       ],
-     alt: "Full garden transformation project showing dramatic before and after results"
+      after: "/gallery-after-transformation.webp",
+      alt: "Full garden transformation project showing dramatic before and after results"
     },
     {
       title: "Complete Landscaping Project",
