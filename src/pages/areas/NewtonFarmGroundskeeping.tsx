@@ -165,7 +165,7 @@ const NewtonFarmGroundskeeping: React.FC = () => {
                     <Star key={i} className="w-5 h-5 fill-primary-accent text-primary-accent" />
                   ))}
                 </div>
-                <span className="text-white font-medium">22 Google Reviews</span>
+                <span className="text-white font-medium">24 Google Reviews</span>
               </div>
             </div>
 
