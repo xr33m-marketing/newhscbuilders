@@ -253,14 +253,8 @@ const Gallery: React.FC = () => {
     {
       title: "Full Garden Transformation",
       images: [
-        "/gallery-before-transformation.webp",
-        "/hsc-before-transformation.webp",
-        "/hsc-full-before-transformation.webp",
         "/HSC-Landscaping-Full-Renovation.webp",
-        "/full-HSC-transformation-Gallery.webp",
-        "/hsc-driveway-after-transformation.webp",
-        "/gallery-full-after-transformation.webp",
-        "/gallery-after-transformation.webp"
+        "/full-HSC-transformation-Gallery.webp"
       ],
       after: "/HSC-Landscaping-Full-Renovation.webp",
       alt: "Full garden transformation by HSC Builders"
