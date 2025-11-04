@@ -22,7 +22,9 @@ export const SEO: React.FC<SEOProps> = ({
 }) => {
   const location = useLocation();
   const baseUrl = 'https://hscbuilders.co.uk';
-  const fullUrl = canonicalUrl || `${baseUrl}${location.pathname}`;
+
+  const pathname = location.pathname === '/' ? '' : location.pathname;
+  const fullUrl = canonicalUrl || `${baseUrl}${pathname}`;
   const fullTitle = `${title} | HSC Builders - Hamilton, Bothwell & Lanarkshire`;
 
   useEffect(() => {
