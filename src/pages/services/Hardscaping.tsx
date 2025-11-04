@@ -5,6 +5,7 @@ import LogoSlider from '../../components/LogoSlider';
 import OurProcessSection from '../../components/OurProcessSection';
 import RecentProjectsSection from '../../components/RecentProjectsSection';
 import { cn } from '../../lib/utils';
+import { SEO, getServiceSchema, getBreadcrumbSchema } from '../../components/SEO';
 
 const Feature = ({
   title,
@@ -286,8 +287,27 @@ const Hardscaping: React.FC = () => {
     "Cambuslang", "Rutherglen", "Blantyre", "Glasgow"
   ];
 
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Hardscaping', url: '/services/hardscaping' }
+  ];
+
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Professional Hardscaping Services Hamilton & Lanarkshire"
+        description="Expert hardscaping in Hamilton, Bothwell & South Lanarkshire. Driveways, patios, block paving, retaining walls, drainage & pathways. Free quotes & quality workmanship."
+        keywords="hardscaping Hamilton, driveways Bothwell, patios South Lanarkshire, block paving Hamilton, retaining walls, drainage systems, pathways"
+        ogImage="/hardscaping-hero-HSC.webp"
+        structuredData={{
+          ...getServiceSchema(
+            'Hardscaping Services',
+            'Professional hardscaping services including driveways, patios, block paving, retaining walls, drainage systems, and pathways in Hamilton and South Lanarkshire.'
+          ),
+          ...getBreadcrumbSchema(breadcrumbs)
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         {/* Mobile Hero Image */}
@@ -322,15 +342,11 @@ const Hardscaping: React.FC = () => {
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
               {/* Main Headline */}
               <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Hardscaping that holds up — and stands out
+                Looking for Hardscaping Services in Hamilton?
               </h1>
-              
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal mb-4 text-primary-accent leading-relaxed" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Specialist driveways, patios & retaining walls in Glasgow — built on precision, finished with pride.
-              </h2>
-              
+
               <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                From low-maintenance patios to full driveway installations, we combine robust foundations with clean, expert finishes that enhance your property's look, feel, and long-term value.
+                With 17+ years of experience, we specialise in driveways, patios, block paving, retaining walls, drainage systems, and pathways across Hamilton, Bothwell, East Kilbride, Cambuslang, and throughout South Lanarkshire.
               </p>
 
               {/* Trust Indicators */}

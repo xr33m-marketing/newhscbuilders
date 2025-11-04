@@ -6,6 +6,7 @@ import LogoSlider from '../../components/LogoSlider';
 import OurProcessSection from '../../components/OurProcessSection';
 import RecentProjectsSection from '../../components/RecentProjectsSection';
 import { cn } from '../../lib/utils';
+import { SEO, getServiceSchema, getBreadcrumbSchema } from '../../components/SEO';
 
 // Animation variants
 const fadeInUp = {
@@ -265,8 +266,27 @@ const MasonryBrickwork: React.FC = () => {
     "Cambuslang", "Rutherglen", "Blantyre", "Glasgow"
   ];
 
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Masonry & Brickwork', url: '/services/masonry-brickwork' }
+  ];
+
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Professional Masonry & Brickwork Services Hamilton & Lanarkshire"
+        description="Expert masonry & brickwork in Hamilton, Bothwell & South Lanarkshire. Garden walls, retaining walls, stonework, brickwork repairs. Free quotes & skilled craftsmen."
+        keywords="masonry Hamilton, brickwork Bothwell, garden walls, retaining walls South Lanarkshire, stonework restoration, masonry repairs"
+        ogImage="/Brickwork-hero.webp"
+        structuredData={{
+          ...getServiceSchema(
+            'Masonry & Brickwork Services',
+            'Professional masonry and brickwork services including garden walls, retaining walls, stonework restoration, and masonry repairs in Hamilton and South Lanarkshire.'
+          ),
+          ...getBreadcrumbSchema(breadcrumbs)
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         {/* Mobile Hero Image */}
@@ -301,15 +321,11 @@ const MasonryBrickwork: React.FC = () => {
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
               {/* Main Headline */}
              <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9), 0px 0px 8px rgba(0,0,0,0.8)' }}>
-               Expert Masonry & Bricklayers in Glasgow
+               Looking for Masonry & Brickwork Services in Hamilton?
               </h1>
-              
-             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal mb-4 leading-relaxed text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-               Walls, steps & features — built to last, made to impress.
-              </h2>
-              
+
               <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl leading-relaxed font-light" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-                Whether restoring listed stonework or building fresh garden features, we bring care, consistency, and craftsmanship that holds its value — and earns your trust.
+                With 17+ years of experience, we specialise in garden walls, retaining walls, brickwork, stonework restoration, steps, and masonry repairs across Hamilton, Bothwell, East Kilbride, Cambuslang, and throughout South Lanarkshire.
               </p>
 
               {/* Trust Indicators */}

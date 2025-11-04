@@ -431,15 +431,11 @@ const Landscaping: React.FC = () => {
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
               {/* Main Headline */}
              <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,1)' }}>
-               Landscaping that elevates your entire home
+               Looking for Landscaping Services in Hamilton?
              </h1>
-              
-             <h2 className="text-xl sm:text-2xl lg:text-3xl font-light leading-relaxed mb-4 text-primary-accent tracking-wide" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
-               Premium landscaping services in Glasgow — designed for lasting beauty, built for real life.
-             </h2>
-             
+
              <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl leading-relaxed font-light" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.4)' }}>
-               From bespoke patios to composite decking and garden walls, we craft elegant outdoor spaces with expert care, quality materials, and a seamless, professional experience from start to finish.
+               With 17+ years of experience, we specialise in patios, driveways, artificial turf, fencing, monoblock, garden walls, and complete garden transformations across Hamilton, Bothwell, East Kilbride, Newton Farm, Cambuslang, and all of South Lanarkshire.
              </p>
 
               {/* Trust Indicators */}

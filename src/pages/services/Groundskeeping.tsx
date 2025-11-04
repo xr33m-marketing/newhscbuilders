@@ -5,6 +5,7 @@ import LogoSlider from '../../components/LogoSlider';
 import OurProcessSection from '../../components/OurProcessSection';
 import RecentProjectsSection from '../../components/RecentProjectsSection';
 import { cn } from '../../lib/utils';
+import { SEO, getServiceSchema, getBreadcrumbSchema } from '../../components/SEO';
 
 const Groundskeeping: React.FC = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -190,8 +191,27 @@ const Groundskeeping: React.FC = () => {
     "Cambuslang", "Rutherglen", "Blantyre", "Glasgow"
   ];
 
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Groundskeeping', url: '/services/groundskeeping' }
+  ];
+
   return (
     <div className="min-h-screen bg-primary-bg text-text-primary">
+      <SEO
+        title="Professional Groundskeeping Services Hamilton & Lanarkshire"
+        description="Expert groundskeeping in Hamilton, Bothwell & South Lanarkshire. Lawn maintenance, hedge trimming, weed removal, garden cleanup. Free quotes & reliable service."
+        keywords="groundskeeping Hamilton, lawn maintenance Bothwell, hedge trimming, weed removal, garden cleanup, grounds maintenance South Lanarkshire"
+        ogImage="/groundskeeping-hero-HSC (1).webp"
+        structuredData={{
+          ...getServiceSchema(
+            'Groundskeeping Services',
+            'Professional groundskeeping and grounds maintenance including lawn care, hedge trimming, weed removal, and garden cleanup in Hamilton and South Lanarkshire.'
+          ),
+          ...getBreadcrumbSchema(breadcrumbs)
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         {/* Mobile Hero Image */}
@@ -226,14 +246,11 @@ const Groundskeeping: React.FC = () => {
             <div className="text-left mt-20 sm:mt-12 lg:mt-0">
               {/* Main Headline */}
               <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-light leading-relaxed mb-8 text-white tracking-wide">
-                Professional groundskeeping in Glasgow
-                <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2 text-primary-accent">
-                  For people who care about the details
-                </span>
+                Looking for Groundskeeping Services in Hamilton?
               </h1>
-              
+
               <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl leading-relaxed font-light">
-                We handle every hedge, lawn and border like it's our own. Discreet service. Immaculate results.
+                With 17+ years of experience, we specialise in lawn maintenance, hedge trimming, weed removal, garden cleanup, and ongoing grounds maintenance across Hamilton, Bothwell, East Kilbride, Cambuslang, and throughout South Lanarkshire.
               </p>
 
               {/* Trust Indicators */}

@@ -75,18 +75,11 @@ const HeroSection: React.FC = () => {
           <div className="text-left mt-20 sm:mt-12 lg:mt-0">
             {/* Main Headline */}
             <h1 className="font-body text-3xl sm:text-5xl lg:text-6xl font-normal leading-tight sm:leading-relaxed mb-6 sm:mb-8 text-white tracking-wide" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9)' }}>
-              Outdoor transformations that last — and leave a lasting impression
+              Looking for Landscapers in Hamilton Near You?
             </h1>
-            
-            <h2 className="text-lg sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 leading-tight sm:leading-relaxed" style={{ 
-              color: '#ffaa44',
-              textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9), 0px 0px 8px rgba(0,0,0,0.8)'
-            }}>
-              Landscaping, hardscaping & groundskeeping across Greater Glasgow
-            </h2>
-            
+
             <p className="text-base sm:text-xl text-white mb-6 sm:mb-8 max-w-xl sm:max-w-2xl leading-normal sm:leading-relaxed font-medium" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 6px rgba(0,0,0,0.9)' }}>
-              With 17+ years of trusted results, we create stunning outdoor spaces — from bespoke patios to pristine lawns and full garden maintenance.
+              With 17+ years of experience, we specialise in driveways, patios, fencing, artificial turf, monoblock, garden walls, and complete landscaping transformations across Hamilton, Bothwell, East Kilbride, Cambuslang, and throughout South Lanarkshire.
             </p>
 
             {/* Trust Indicators */}
