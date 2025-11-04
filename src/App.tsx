@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -27,15 +28,18 @@ import JacktonMasonry from './pages/areas/JacktonMasonry';
 import BothwellMasonry from './pages/areas/BothwellMasonry';
 import HamiltonMasonry from './pages/areas/HamiltonMasonry';
 import NewtonFarmMasonry from './pages/areas/NewtonFarmMasonry';
+import BothwellDriveways from './pages/areas/BothwellDriveways';
+import HamiltonDriveways from './pages/areas/HamiltonDriveways';
+import Services from './pages/Services';
 
 function App() {
-  const [currentPath, setCurrentPath] = React.useState(window.location.hash.slice(1) || '/');
+  const location = useLocation();
 
-  // Update meta description based on current path
   React.useEffect(() => {
-    const metaDescriptions = {
+    const metaDescriptions: { [key: string]: string } = {
       '/': "HSC Builders – Expert landscaping, hardscaping & groundskeeping in Glasgow. Over 17 years' experience delivering beautiful, lasting outdoor spaces. Get a free quote today.",
       '/about': "Learn more about HSC Builders – trusted landscaping & building experts in Glasgow with 17+ years of experience. Quality, reliability & customer-first service.",
+      '/services': "Professional landscaping, hardscaping, groundskeeping & masonry services in Glasgow from HSC Builders. Expert outdoor solutions with 17+ years experience.",
       '/services/landscaping': "Transform your garden with HSC Builders' landscaping in Glasgow. From turf & artificial grass to fencing, decking & planting, we create stunning outdoor spaces.",
       '/services/hardscaping': "HSC Builders – Glasgow's hardscaping specialists. Driveways, patios, brickwork & paving built to last with expert craftsmanship. Free consultations available.",
       '/services/groundskeeping': "Reliable groundskeeping services in Glasgow from HSC Builders. Lawn care, hedge trimming & year-round garden maintenance to keep your outdoor space pristine.",
@@ -47,9 +51,8 @@ function App() {
       '/faq': "HSC Builders FAQ – Get answers about our landscaping, hardscaping & groundskeeping services in Glasgow. Pricing, timelines & service information."
     };
 
-    const description = metaDescriptions[currentPath] || metaDescriptions['/'];
-    
-    // Update meta description
+    const description = metaDescriptions[location.pathname] || metaDescriptions['/'];
+
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
       metaDescription = document.createElement('meta');
@@ -57,86 +60,44 @@ function App() {
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', description);
-  }, [currentPath]);
-  React.useEffect(() => {
-    const handleHashChange = () => {
-      const newPath = window.location.hash.slice(1) || '/';
-      setCurrentPath(newPath);
-      // Scroll to top when navigating to a new page
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-  // Also scroll to top on initial page load
-  React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
-  
-  const renderPage = () => {
-    switch (currentPath) {
-      case '/about':
-        return <About />;
-      case '/areas':
-        return <Areas />;
-      case '/services/landscaping':
-        return <Landscaping />;
-      case '/services/hardscaping':
-        return <Hardscaping />;
-      case '/services/groundskeeping':
-        return <Groundskeeping />;
-      case '/services/masonry-brickwork':
-        return <MasonryBrickwork />;
-      case '/contact':
-        return <Contact />;
-      case '/reviews':
-        return <Reviews />;
-      case '/faq':
-        return <FAQ />;
-      case '/gallery':
-        return <Gallery />;
-      case '/areas/jackton-landscaping':
-        return <JacktonLandscaping />;
-      case '/areas/bothwell-landscaping':
-        return <BothwellLandscaping />;
-      case '/areas/hamilton-landscaping':
-        return <HamiltonLandscaping />;
-      case '/areas/newton-farm-landscaping':
-        return <NewtonFarmLandscaping />;
-      case '/areas/jackton-driveways':
-        return <JacktonDriveways />;
-      case '/areas/bothwell-hardscaping':
-        return <BothwellHardscaping />;
-      case '/areas/hamilton-hardscaping':
-        return <HamiltonHardscaping />;
-      case '/areas/newton-farm-hardscaping':
-        return <NewtonFarmHardscaping />;
-      case '/areas/jackton-groundskeeping':
-        return <JacktonGroundskeeping />;
-      case '/areas/bothwell-groundskeeping':
-        return <BothwellGroundskeeping />;
-      case '/areas/hamilton-groundskeeping':
-        return <HamiltonGroundskeeping />;
-      case '/areas/newton-farm-groundskeeping':
-        return <NewtonFarmGroundskeeping />;
-      case '/areas/jackton-masonry':
-        return <JacktonMasonry />;
-      case '/areas/bothwell-masonry':
-        return <BothwellMasonry />;
-      case '/areas/hamilton-masonry':
-        return <HamiltonMasonry />;
-      case '/areas/newton-farm-masonry':
-        return <NewtonFarmMasonry />;
-      default:
-        return <Home />;
-    }
-  };
+  }, [location]);
 
   return (
     <Layout>
-      {renderPage()}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/landscaping" element={<Landscaping />} />
+        <Route path="/services/hardscaping" element={<Hardscaping />} />
+        <Route path="/services/groundskeeping" element={<Groundskeeping />} />
+        <Route path="/services/masonry-brickwork" element={<MasonryBrickwork />} />
+        <Route path="/areas" element={<Areas />} />
+        <Route path="/areas/jackton-landscaping" element={<JacktonLandscaping />} />
+        <Route path="/areas/bothwell-landscaping" element={<BothwellLandscaping />} />
+        <Route path="/areas/hamilton-landscaping" element={<HamiltonLandscaping />} />
+        <Route path="/areas/newton-farm-landscaping" element={<NewtonFarmLandscaping />} />
+        <Route path="/areas/jackton-driveways" element={<JacktonDriveways />} />
+        <Route path="/areas/bothwell-driveways" element={<BothwellDriveways />} />
+        <Route path="/areas/hamilton-driveways" element={<HamiltonDriveways />} />
+        <Route path="/areas/bothwell-hardscaping" element={<BothwellHardscaping />} />
+        <Route path="/areas/hamilton-hardscaping" element={<HamiltonHardscaping />} />
+        <Route path="/areas/newton-farm-hardscaping" element={<NewtonFarmHardscaping />} />
+        <Route path="/areas/jackton-groundskeeping" element={<JacktonGroundskeeping />} />
+        <Route path="/areas/bothwell-groundskeeping" element={<BothwellGroundskeeping />} />
+        <Route path="/areas/hamilton-groundskeeping" element={<HamiltonGroundskeeping />} />
+        <Route path="/areas/newton-farm-groundskeeping" element={<NewtonFarmGroundskeeping />} />
+        <Route path="/areas/jackton-masonry" element={<JacktonMasonry />} />
+        <Route path="/areas/bothwell-masonry" element={<BothwellMasonry />} />
+        <Route path="/areas/hamilton-masonry" element={<HamiltonMasonry />} />
+        <Route path="/areas/newton-farm-masonry" element={<NewtonFarmMasonry />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Layout>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, Triangle } from 'lucide-react';
 
 const Header: React.FC = () => {
@@ -12,67 +13,67 @@ const Header: React.FC = () => {
 
   const navigationItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#/about' },
-    { 
-      name: 'Services', 
-      href: '#', 
-      hasDropdown: true, 
+    { name: 'About', href: '/about' },
+    {
+      name: 'Services',
+      href: '/services',
+      hasDropdown: true,
       dropdownItems: [
-        { 
-          name: 'Landscaping', 
-          href: '#/services/landscaping',
+        {
+          name: 'Landscaping',
+          href: '/services/landscaping',
           hasSubDropdown: true,
           subDropdownItems: [
             { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '#/areas/jackton-landscaping' },
-            { name: 'Bothwell', href: '#/areas/bothwell-landscaping' },
-            { name: 'Hamilton', href: '#/areas/hamilton-landscaping' },
-            { name: 'Newton Farm', href: '#/areas/newton-farm-landscaping' },
+            { name: 'Jackton', href: '/areas/jackton-landscaping' },
+            { name: 'Bothwell', href: '/areas/bothwell-landscaping' },
+            { name: 'Hamilton', href: '/areas/hamilton-landscaping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-landscaping' },
           ]
         },
-        { 
-          name: 'Hardscaping', 
-          href: '#/services/hardscaping',
+        {
+          name: 'Hardscaping',
+          href: '/services/hardscaping',
           hasSubDropdown: true,
           subDropdownItems: [
             { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '#/areas/jackton-driveways' },
-            { name: 'Bothwell', href: '#/areas/bothwell-hardscaping' },
-            { name: 'Hamilton', href: '#/areas/hamilton-hardscaping' },
-            { name: 'Newton Farm', href: '#/areas/newton-farm-hardscaping' },
+            { name: 'Jackton', href: '/areas/jackton-driveways' },
+            { name: 'Bothwell', href: '/areas/bothwell-hardscaping' },
+            { name: 'Hamilton', href: '/areas/hamilton-hardscaping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-hardscaping' },
           ]
         },
-        { 
-          name: 'Groundskeeping', 
-          href: '#/services/groundskeeping',
+        {
+          name: 'Groundskeeping',
+          href: '/services/groundskeeping',
           hasSubDropdown: true,
           subDropdownItems: [
             { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '#/areas/jackton-groundskeeping' },
-            { name: 'Bothwell', href: '#/areas/bothwell-groundskeeping' },
-            { name: 'Hamilton', href: '#/areas/hamilton-groundskeeping' },
-            { name: 'Newton Farm', href: '#/areas/newton-farm-groundskeeping' },
+            { name: 'Jackton', href: '/areas/jackton-groundskeeping' },
+            { name: 'Bothwell', href: '/areas/bothwell-groundskeeping' },
+            { name: 'Hamilton', href: '/areas/hamilton-groundskeeping' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-groundskeeping' },
           ]
         },
-        { 
-          name: 'Masonry & Brickwork', 
-          href: '#/services/masonry-brickwork',
+        {
+          name: 'Masonry & Brickwork',
+          href: '/services/masonry-brickwork',
           hasSubDropdown: true,
           subDropdownItems: [
             { name: 'Areas', isHeader: true },
-            { name: 'Jackton', href: '#/areas/jackton-masonry' },
-            { name: 'Bothwell', href: '#/areas/bothwell-masonry' },
-            { name: 'Hamilton', href: '#/areas/hamilton-masonry' },
-            { name: 'Newton Farm', href: '#/areas/newton-farm-masonry' },
+            { name: 'Jackton', href: '/areas/jackton-masonry' },
+            { name: 'Bothwell', href: '/areas/bothwell-masonry' },
+            { name: 'Hamilton', href: '/areas/hamilton-masonry' },
+            { name: 'Newton Farm', href: '/areas/newton-farm-masonry' },
           ]
         },
       ]
     },
-    { name: 'Areas', href: '#/areas' },
-    { name: 'Gallery', href: '#/gallery' },
-    { name: 'Reviews', href: '#/reviews' },
-    { name: 'FAQ', href: '#/faq' },
-    { name: 'Contact', href: '#/contact' },
+    { name: 'Areas', href: '/areas' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Reviews', href: '/reviews' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const handleMouseEnter = (itemName: string) => {
@@ -92,31 +93,29 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
           <div className="flex items-center space-x-6">
-            <a href="/" onClick={scrollToTop} className="flex items-center space-x-6">
-              <img 
-                src="/hsc-logo.webp" 
-                alt="HSC Builders Logo" 
+            <Link to="/" onClick={scrollToTop} className="flex items-center space-x-6">
+              <img
+                src="/hsc-logo.webp"
+                alt="HSC Builders Logo"
                 className="w-20 h-20 object-contain"
               />
               <div>
                 <h1 className="text-xl font-heading font-bold text-white">HSC BUILDERS</h1>
               </div>
-            </a>
+            </Link>
           </div>
-          
-          {/* Desktop Navigation */}
+
           <nav className="hidden lg:flex items-center space-x-12 ml-32">
             {navigationItems.map((item) => (
-              <div 
-                key={item.name} 
+              <div
+                key={item.name}
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(item.name)}
                 onMouseLeave={handleMouseLeave}
               >
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="text-white hover:text-primary-accent font-medium transition-colors duration-200 flex items-center"
                 >
                   {item.name}
@@ -125,9 +124,8 @@ const Header: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
-                </a>
-                
-                {/* Dropdown Menu */}
+                </Link>
+
                 {item.hasDropdown && item.dropdownItems && activeDropdown === item.name && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm border border-white/10 rounded-lg shadow-xl transition-all duration-200 z-50">
                     <div className="py-2">
@@ -137,8 +135,8 @@ const Header: React.FC = () => {
                           className="relative"
                           onMouseEnter={() => dropdownItem.hasSubDropdown && handleSubDropdownEnter(dropdownItem.name)}
                         >
-                          <a
-                            href={dropdownItem.href}
+                          <Link
+                            to={dropdownItem.href}
                             onClick={scrollToTop}
                             className="block px-4 py-3 text-white hover:text-primary-accent hover:bg-white/5 transition-colors duration-200 text-sm flex items-center justify-between"
                           >
@@ -148,9 +146,8 @@ const Header: React.FC = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                               </svg>
                             )}
-                          </a>
-                          
-                          {/* Sub-dropdown for Areas */}
+                          </Link>
+
                           {dropdownItem.hasSubDropdown && dropdownItem.subDropdownItems && activeSubDropdown === dropdownItem.name && (
                             <div className="absolute top-0 left-full ml-1 w-48 bg-black/95 backdrop-blur-sm border border-white/10 rounded-lg shadow-xl z-50">
                               <div className="py-2">
@@ -160,14 +157,14 @@ const Header: React.FC = () => {
                                       {subItem.name}
                                     </div>
                                   ) : (
-                                    <a
+                                    <Link
                                       key={subItem.name}
-                                      href={subItem.href}
+                                      to={subItem.href}
                                       onClick={scrollToTop}
                                       className="block px-4 py-2 text-white hover:text-primary-accent hover:bg-white/5 transition-colors duration-200 text-sm"
                                     >
                                       {subItem.name}
-                                    </a>
+                                    </Link>
                                   )
                                 ))}
                               </div>
@@ -182,7 +179,6 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex flex-col items-end space-y-1">
               <a
@@ -200,7 +196,6 @@ const Header: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -211,7 +206,6 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden border-t border-white border-opacity-20 bg-black">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -224,8 +218,8 @@ const Header: React.FC = () => {
                     </div>
                     {item.dropdownItems && item.dropdownItems.map((dropdownItem) => (
                       <div key={dropdownItem.name} className="ml-3">
-                        <a
-                          href={dropdownItem.href}
+                        <Link
+                          to={dropdownItem.href}
                           className="block px-3 py-2 text-sm font-medium text-white hover:text-primary-accent hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors duration-200"
                           onClick={() => {
                             scrollToTop();
@@ -233,7 +227,7 @@ const Header: React.FC = () => {
                           }}
                         >
                           {dropdownItem.name}
-                        </a>
+                        </Link>
                         {dropdownItem.hasSubDropdown && dropdownItem.subDropdownItems && (
                           <div className="ml-4 mt-1 space-y-1">
                             {dropdownItem.subDropdownItems.map((subItem) => (
@@ -242,9 +236,9 @@ const Header: React.FC = () => {
                                   {subItem.name}
                                 </div>
                               ) : (
-                                <a
+                                <Link
                                   key={subItem.name}
-                                  href={subItem.href}
+                                  to={subItem.href}
                                   className="block px-3 py-1 text-xs font-medium text-gray-300 hover:text-primary-accent hover:bg-white hover:bg-opacity-10 rounded transition-colors duration-200"
                                   onClick={() => {
                                     scrollToTop();
@@ -252,7 +246,7 @@ const Header: React.FC = () => {
                                   }}
                                 >
                                   {subItem.name}
-                                </a>
+                                </Link>
                               )
                             ))}
                           </div>
@@ -261,8 +255,8 @@ const Header: React.FC = () => {
                     ))}
                   </div>
                 ) : (
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="block px-3 py-2 text-base font-medium text-white hover:text-primary-accent hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors duration-200"
                     onClick={() => {
                       scrollToTop();
@@ -270,7 +264,7 @@ const Header: React.FC = () => {
                     }}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
