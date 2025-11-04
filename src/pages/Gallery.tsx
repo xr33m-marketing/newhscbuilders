@@ -99,8 +99,26 @@ const Gallery: React.FC = () => {
 
   // Block Paving & Driveways
   const driveways: Project[] = [
-    { 
-      title: "Expert Block Paving Project", 
+    {
+      title: "Full Driveway Installation",
+      images: [
+        "/Gallery-HSC-Before-d-way.webp",
+        "/d-way-HSC-before-Gallery.webp",
+        "/d-way-before-HSC-Gallery.webp",
+        "/Gallery-d-way-after-HSC.webp",
+        "/d-way-after-HSC-Gallery.webp",
+        "/d-way-HSC-gallery-after.webp",
+        "/d-way-Gallery-After-HSC.webp",
+        "/d-way-HSC-after-Galllery.webp",
+        "/Gallery-d-way-HSC-after.webp",
+        "/HSC-d-way-GAllery-after.webp"
+      ],
+      before: "/Gallery-HSC-Before-d-way.webp",
+      after: "/Gallery-d-way-after-HSC.webp",
+      alt: "Complete driveway installation transformation from start to finish"
+    },
+    {
+      title: "Expert Block Paving Project",
       images: [
         "/HSC-Block-Paving-Hardscaping.webp",
         "/Block-paving-Hardscaping-HSC.webp",
@@ -109,8 +127,8 @@ const Gallery: React.FC = () => {
       after: "/HSC-Block-Paving-Hardscaping.webp",
       alt: "High-quality block paving driveway"
     },
-    { 
-      title: "Professional Block Paving", 
+    {
+      title: "Professional Block Paving",
       images: [
         "/Pathway-monoblock-HSC-Landscaping.webp",
         "/HSC-Hardscaping-Block-Paving.webp",
@@ -119,8 +137,8 @@ const Gallery: React.FC = () => {
       after: "/Hardscaping-HSC-Block-Paving.webp",
       alt: "Professional block paving installation"
     },
-    { 
-      title: "Driveway Block Paving", 
+    {
+      title: "Driveway Block Paving",
       after: "/Block-paving-HSC-Hardscaping.webp",
       alt: "Durable block paving driveway"
     },
