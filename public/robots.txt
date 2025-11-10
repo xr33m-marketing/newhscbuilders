@@ -3,6 +3,6 @@ Allow: /
 Disallow: /*#
 
 # Canonical domain
-Host: https://hscbuilders.co.uk
+Host: https://www.hscbuilders.co.uk
 
-Sitemap: https://hscbuilders.co.uk/sitemap.xml
+Sitemap: https://www.hscbuilders.co.uk/sitemap.xml

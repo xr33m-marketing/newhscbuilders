@@ -1,9 +1,9 @@
-# Redirect all HTTP to HTTPS
-http://hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
-http://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
+# Redirect all HTTP to HTTPS and non-www to www
+http://hscbuilders.co.uk/* https://www.hscbuilders.co.uk/:splat 301!
+http://www.hscbuilders.co.uk/* https://www.hscbuilders.co.uk/:splat 301!
 
-# Redirect www to non-www
-https://www.hscbuilders.co.uk/* https://hscbuilders.co.uk/:splat 301!
+# Redirect non-www to www
+https://hscbuilders.co.uk/* https://www.hscbuilders.co.uk/:splat 301!
 
 # Redirect old pages from previous site version to relevant current pages
 /extensions /services/hardscaping 301
