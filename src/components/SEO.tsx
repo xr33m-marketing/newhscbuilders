@@ -21,7 +21,7 @@ export const SEO: React.FC<SEOProps> = ({
   structuredData
 }) => {
   const location = useLocation();
-  const baseUrl = 'https://www.hscbuilders.co.uk';
+  const baseUrl = 'https://hscbuilders.co.uk';
 
   const pathname = location.pathname === '/' ? '' : location.pathname;
   const fullUrl = canonicalUrl || `${baseUrl}${pathname}`;
@@ -89,9 +89,9 @@ export const getLocalBusinessSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'HSC Builders',
-  image: 'https://www.hscbuilders.co.uk/hsc-logo.webp',
-  '@id': 'https://www.hscbuilders.co.uk',
-  url: 'https://www.hscbuilders.co.uk',
+  image: 'https://hscbuilders.co.uk/hsc-logo.webp',
+  '@id': 'https://hscbuilders.co.uk',
+  url: 'https://hscbuilders.co.uk',
   telephone: '+44-1698-123456',
   priceRange: '££',
   address: {
@@ -165,6 +165,6 @@ export const getBreadcrumbSchema = (items: Array<{ name: string; url: string }>)
     '@type': 'ListItem',
     position: index + 1,
     name: item.name,
-    item: `https://www.hscbuilders.co.uk${item.url}`
+    item: `https://hscbuilders.co.uk${item.url}`
   }))
 });

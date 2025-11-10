@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hscbuilders.co.uk/sitemap.xml
+Sitemap: https://hscbuilders.co.uk/sitemap.xml
