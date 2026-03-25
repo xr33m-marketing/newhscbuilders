@@ -37,7 +37,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
       {/* Form */}
       <form 
-        action="https://formspree.io/f/xvgqzbeo"
+        action="https://formspree.io/f/xnjglyav"
         method="POST" 
         onSubmit={handleSubmit}
         className="space-y-6"
