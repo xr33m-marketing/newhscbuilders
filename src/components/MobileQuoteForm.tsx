@@ -18,7 +18,7 @@ const MobileQuoteForm: React.FC = () => {
 
     try {
       const formData = new FormData(e.currentTarget);
-      const response = await fetch('https://formspree.io/f/xvgqzbeo', {
+      const response = await fetch('https://formspree.io/f/xnjglyav', {
         method: 'POST',
         body: formData,
         headers: {
