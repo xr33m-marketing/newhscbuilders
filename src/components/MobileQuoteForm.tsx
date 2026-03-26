@@ -1,23 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const MobileQuoteForm: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    if (sessionStorage.getItem('mobileFormSubmitted')) {
-      setShowThankYouMessage(true);
-      sessionStorage.removeItem('mobileFormSubmitted');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, []);
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const form = e.currentTarget;
 
     try {
-      const formData = new FormData(e.currentTarget);
+      const formData = new FormData(form);
       const response = await fetch('https://formspree.io/f/mdapnvvw', {
         method: 'POST',
         body: formData,
@@ -27,9 +20,10 @@ const MobileQuoteForm: React.FC = () => {
       });
 
       if (response.ok) {
-        sessionStorage.setItem('mobileFormSubmitted', 'true');
-        e.currentTarget.reset();
-        window.location.reload();
+        form.reset();
+        setShowThankYouMessage(true);
+        setIsSubmitting(false);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const errorData = await response.json().catch(() => null);
         console.error('Formspree error - Status:', response.status);

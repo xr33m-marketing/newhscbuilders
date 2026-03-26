@@ -1,25 +1,18 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(() => {
-    if (sessionStorage.getItem('heroFormSubmitted')) {
-      setShowThankYouMessage(true);
-      sessionStorage.removeItem('heroFormSubmitted');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const form = e.currentTarget;
 
     try {
-      const formData = new FormData(e.currentTarget);
+      const formData = new FormData(form);
       const response = await fetch('https://formspree.io/f/mdapnvvw', {
         method: 'POST',
         body: formData,
@@ -29,9 +22,10 @@ const HeroSection: React.FC = () => {
       });
 
       if (response.ok) {
-        sessionStorage.setItem('heroFormSubmitted', 'true');
-        e.currentTarget.reset();
-        window.location.reload();
+        form.reset();
+        setShowThankYouMessage(true);
+        setIsSubmitting(false);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const errorData = await response.json().catch(() => null);
         console.error('Formspree error - Status:', response.status);
