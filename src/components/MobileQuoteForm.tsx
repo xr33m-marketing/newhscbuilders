@@ -28,17 +28,18 @@ const MobileQuoteForm: React.FC = () => {
 
       if (response.ok) {
         sessionStorage.setItem('mobileFormSubmitted', 'true');
+        e.currentTarget.reset();
         window.location.reload();
       } else {
         const errorData = await response.json().catch(() => null);
-        console.log('Formspree status:', response.status);
-        console.log('Formspree error data:', errorData);
-        alert(`Form error: ${response.status}`);
+        console.error('Formspree error - Status:', response.status);
+        console.error('Formspree error - Response:', errorData);
+        alert('There was an error submitting your form. Please try again.');
         setIsSubmitting(false);
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('An error occurred. Please try again.');
+      alert('There was an error submitting your form. Please try again.');
       setIsSubmitting(false);
     }
   };
@@ -70,6 +71,16 @@ const MobileQuoteForm: React.FC = () => {
                 required
                 className="w-full bg-white bg-opacity-10 border border-white border-opacity-20 rounded-lg px-4 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-primary-accent focus:bg-opacity-20 transition-all duration-200"
                 placeholder="Your Name"
+              />
+            </div>
+
+            <div>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full bg-white bg-opacity-10 border border-white border-opacity-20 rounded-lg px-4 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-primary-accent focus:bg-opacity-20 transition-all duration-200"
+                placeholder="Email Address"
               />
             </div>
 

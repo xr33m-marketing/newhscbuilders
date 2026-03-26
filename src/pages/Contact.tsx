@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
 
     try {
       const formData = new FormData(e.currentTarget);
-      const response = await fetch('https://formspree.io/f/xvgqzbeo', {
+      const response = await fetch('https://formspree.io/f/mdapnvvw', {
         method: 'POST',
         body: formData,
         headers: {
@@ -30,13 +30,18 @@ const Contact: React.FC = () => {
 
       if (response.ok) {
         sessionStorage.setItem('contactFormSubmitted', 'true');
+        e.currentTarget.reset();
         window.location.reload();
       } else {
+        const errorData = await response.json().catch(() => null);
+        console.error('Formspree error - Status:', response.status);
+        console.error('Formspree error - Response:', errorData);
         alert('There was an error submitting your form. Please try again.');
+        setIsSubmitting(false);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       alert('There was an error submitting your form. Please try again.');
-    } finally {
       setIsSubmitting(false);
     }
   };

@@ -1,24 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send } from 'lucide-react';
 
 interface ContactFormProps {
   title?: string;
   subtitle?: string;
-  formspreeId?: string;
   className?: string;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({
   title = "Get In Touch",
   subtitle = "Ready to transform your outdoor space? Send us a message and we'll get back to you within 24 hours.",
-  formspreeId = "YOUR_FORM_ID",
   className = ''
 }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+
+  useEffect(() => {
+    if (sessionStorage.getItem('contactFormComponentSubmitted')) {
+      setShowThankYouMessage(true);
+      sessionStorage.removeItem('contactFormComponentSubmitted');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const response = await fetch('https://formspree.io/f/mdapnvvw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        sessionStorage.setItem('contactFormComponentSubmitted', 'true');
+        e.currentTarget.reset();
+        window.location.reload();
+      } else {
+        const errorData = await response.json().catch(() => null);
+        console.error('Formspree error - Status:', response.status);
+        console.error('Formspree error - Response:', errorData);
+        alert('There was an error submitting your form. Please try again.');
+        setIsSubmitting(false);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting your form. Please try again.');
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className={`card ${className}`}>
-      {/* Header */}
+      {showThankYouMessage && (
+        <div className="mb-6 p-4 bg-green-600 text-white rounded-lg text-center">
+          <p className="font-semibold">Thank you! Your form has been submitted.</p>
+          <p className="text-sm mt-1">We'll respond within 24 hours.</p>
+        </div>
+      )}
+
       <div className="text-center mb-8">
         <h3 className="font-heading text-2xl font-bold text-text-primary mb-4">
           {title}
@@ -28,13 +73,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
         </p>
       </div>
 
-      {/* Form */}
-      <form
-  action="https://formspree.io/f/mdapnvvw"
-  method="POST"
-  className="space-y-6"
->
-        {/* Name Fields */}
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label htmlFor="firstName" className="block text-sm font-medium text-text-primary mb-2">
@@ -64,7 +103,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
           </div>
         </div>
 
-        {/* Contact Fields */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-2">
@@ -93,7 +131,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
           </div>
         </div>
 
-        {/* Service Selection */}
         <div>
           <label htmlFor="service" className="block text-sm font-medium text-text-primary mb-2">
             Service Interested In
@@ -113,7 +150,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
           </select>
         </div>
 
-        {/* Message */}
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-2">
             Message *
@@ -128,7 +164,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
           ></textarea>
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           disabled={isSubmitting}
