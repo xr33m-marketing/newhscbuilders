@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 
     try {
       const formData = new FormData(form);
-      const response = await fetch('https://formspree.io/f/mdapnvvw', {
+      const response = await fetch('https://formspree.io/f/xnjglyav', {
         method: 'POST',
         body: formData,
         headers: {
