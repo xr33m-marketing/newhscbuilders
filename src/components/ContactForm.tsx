@@ -16,13 +16,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
 }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Form submission logic would go here
-    setTimeout(() => setIsSubmitting(false), 2000);
-  };
-
   return (
     <div className={`card ${className}`}>
       {/* Header */}
@@ -36,12 +29,11 @@ const ContactForm: React.FC<ContactFormProps> = ({
       </div>
 
       {/* Form */}
-      <form 
-        action="https://formspree.io/f/mdapnvvw"
-        method="POST" 
-        onSubmit={handleSubmit}
-        className="space-y-6"
-      >
+      <form
+  action="https://formspree.io/f/mdapnvvw"
+  method="POST"
+  className="space-y-6"
+>
         {/* Name Fields */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
