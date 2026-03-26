@@ -26,18 +26,15 @@ const MobileQuoteForm: React.FC = () => {
         }
       });
 
-      if (response.ok) {
-        sessionStorage.setItem('mobileFormSubmitted', 'true');
-        window.location.reload();
-      } else {
-        alert('There was an error submitting your form. Please try again.');
-      }
-    } catch (error) {
-      alert('There was an error submitting your form. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+   if (response.ok) {
+  sessionStorage.setItem('mobileFormSubmitted', 'true');
+  window.location.reload();
+} else {
+  const errorData = await response.json().catch(() => null);
+  console.log('Formspree status:', response.status);
+  console.log('Formspree error data:', errorData);
+  alert(`Form error: ${response.status}`);
+}
 
   return (
     <section className="lg:hidden bg-secondary-bg py-16 px-4">
